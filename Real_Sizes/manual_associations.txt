@@ -1,0 +1,118 @@
+samsung note pro 12.2   samsung sm-p900 (galaxy note pro) --{'h': 164.14067171898483, 'd': 309.7, 'w': 262.62507475037575}
+samsung sm-g930f (galaxy s7)   samsung sm-g930f (galaxy s7) --{'h': 112.9038950791141, 'd': 129.54, 'w': 63.50844098200168}
+samsung galaxy s6 edge   samsung sm-g925f (galaxy s6 edge) --{'h': 112.9038950791141, 'd': 129.54, 'w': 63.50844098200168}
+huawei mate 8   nextbook next --{'h': 132.82811185778132, 'd': 152.4, 'w': 74.715812920002}
+apple iphone 5s   apple iphone 5s --{'h': 88.51875897887955, 'd': 101.6, 'w': 49.86972336838285}
+lg g3   lg d855 (g3) --{'h': 121.14899966031234, 'd': 139.0, 'w': 68.14631230892569}
+samsung sm-g9208 (galaxy s6)   samsung sm-g9208 (galaxy s6) --{'h': 112.9038950791141, 'd': 129.54, 'w': 63.50844098200168}
+android   generic android 7.0 --{'h': 121.75910253629954, 'd': 139.7, 'w': 68.48949517666848}
+apple iphone 6s   apple iphone 6s --{'h': 104.06118486860336, 'd': 119.38, 'w': 58.50516390663608}
+samsung s5 mini   samsung sm-g800f (galaxy s5 mini) --{'h': 99.62108389333598, 'd': 114.3, 'w': 56.036859690001485}
+apple iphone 7   apple iphone 7 --{'h': 104.06118486860336, 'd': 119.38, 'w': 58.50516390663608}
+apple iphone 5   apple iphone 5 --{'h': 88.51875897887955, 'd': 101.6, 'w': 49.86972336838285}
+dell xps 13   google chrome --{'h': 190.22136097743288, 'd': 388.0, 'w': 338.17130840432515}
+nexus 5   google nexus 4 --{'h': 102.36750547156353, 'd': 119.38, 'w': 61.42050328293811}
+iphone 5   apple iphone 5s --{'h': 88.51875897887955, 'd': 101.6, 'w': 49.86972336838285}
+oneplus 3   oneplus rain a3000 (3) --{'h': 121.75910253629954, 'd': 139.7, 'w': 68.48949517666848}
+samsun s7edge   samsung sm-g935w8 (galaxy s7 edge) --{'h': 121.75910253629952, 'd': 139.7, 'w': 68.48949517666847}
+apple ipad air   apple ipad air --{'h': 197.10399999999998, 'd': 246.38, 'w': 147.828}
+xiaomi redmi note 2 (redmi note 2)   xiaomi redmi note 2 (redmi note 2) --{'h': 121.75910253629954, 'd': 139.7, 'w': 68.48949517666848}
+nexus 5   google nexus 5 --{'h': 109.58319228266959, 'd': 125.73, 'w': 61.64054565900164}
+nexus 5   generic android 7.1 --{'h': 124.05085653538956, 'd': 144.78, 'w': 74.65007295934947}
+apple iphone 5c   apple iphone 5 --{'h': 88.51875897887955, 'd': 101.6, 'w': 49.86972336838285}
+hp ultrabook   google chrome --{'h': 161.82423398007754, 'd': 330.2, 'w': 287.8279995010234}
+apple iphone 6   apple iphone 6 --{'h': 104.06118486860336, 'd': 119.38, 'w': 58.50516390663608}
+htc htc po582 (one mini)   htc htc po582 (one mini) --{'h': 95.19348016474328, 'd': 109.22, 'w': 53.54633259266809}
+samsung galaxy s4   samsung i9506 (galaxy s4) --{'h': 110.69009321481776, 'd': 127.0, 'w': 62.26317743333499}
+iphone 5s   apple iphone 5s --{'h': 88.51875897887955, 'd': 101.6, 'w': 49.86972336838285}
+iphone 6   apple iphone 6 --{'h': 104.06118486860336, 'd': 119.38, 'w': 58.50516390663608}
+samsung sm-g900f (galaxy s5)   samsung sm-g900f (galaxy s5) --{'h': 112.90389507911411, 'd': 129.54, 'w': 63.50844098200168}
+nexus 6p   generic android 7.1 --{'h': 124.05085653538956, 'd': 144.78, 'w': 74.65007295934947}
+oneplus x   oneplus e1005 (x) --{'h': 113.3048198261914, 'd': 130.0, 'w': 63.733961152232666}
+google nexus 6p   google nexus 6p --{'h': 126.16828956281348, 'd': 144.78, 'w': 71.01275314191142}
+oneplus 2   oneplus one a2005 (2) --{'h': 121.75910253629954, 'd': 139.7, 'w': 68.48949517666848}
+vodafone smart ultra 6   generic android 6.0 --{'h': 121.75910253629954, 'd': 139.7, 'w': 68.48949517666848}
+google nexus 5x   google nexus 5x --{'h': 115.10089574151408, 'd': 132.08, 'w': 64.78356426981394}
+apple iphone se   apple iphone se --{'h': 88.51875897887955, 'd': 101.6, 'w': 49.86972336838285}
+apple iphone 4s   apple iphone 4s --{'h': 73.9692711666343, 'd': 88.9, 'w': 49.31284744442287}
+oneplus 3t   generic android 7.0 --{'h': 121.75910253629954, 'd': 139.7, 'w': 68.48949517666848}
+huawei ale-l02 (p8 lite)   huawei ale-l02 (p8 lite) --{'h': 110.69009321481775, 'd': 127.0, 'w': 62.26317743333499}
+samsung gt-i9505 (galaxy s4)   samsung gt-i9505 (galaxy s4) --{'h': 110.69009321481776, 'd': 127.0, 'w': 62.26317743333499}
+apple ipad mini 2   apple ipad mini 2 --{'h': 160.528, 'd': 200.66, 'w': 120.396}
+apple ipad air touch 2   apple ipad air 2 --{'h': 197.10399999999998, 'd': 246.38, 'w': 147.828}
+google pixel c (pixel c)   google pixel c (pixel c) --{'h': 149.01679290563553, 'd': 259.08, 'w': 211.9349943546816}
+sony e2303 (xperia m4 aqua)   sony e2303 (xperia m4 aqua) --{'h': 110.69009321481775, 'd': 127.0, 'w': 62.26317743333499}
+apple iphone 6 plus   apple iphone 6 plus --{'h': 121.75910253629952, 'd': 139.7, 'w': 68.48949517666848}
+apple ipad air 2   apple ipad air 2 --{'h': 197.10399999999998, 'd': 246.38, 'w': 147.828}
+google pixel xl   google pixel xl --{'h': 121.7413320342937, 'd': 139.7, 'w': 68.52107759307242}
+apple+se   apple iphone se --{'h': 88.51875897887955, 'd': 101.6, 'w': 49.86972336838285}
+apple iphone 6   apple iphone 6s --{'h': 104.06118486860336, 'd': 119.38, 'w': 58.50516390663608}
+oneplus 3    generic android 7.0 --{'h': 121.75910253629954, 'd': 139.7, 'w': 68.48949517666848}
+sony f3115 (xperia xa)   sony f3115 (xperia xa) --{'h': 110.69009321481775, 'd': 127.0, 'w': 62.26317743333499}
+huawei honor note 8   generic android 7.0 --{'h': 144.25965837798609, 'd': 167.64, 'w': 85.39508513179635}
+lumia 930   nokia lumia 930 --{'h': 110.68593543751557, 'd': 127, 'w': 62.27056845992438}
+blu hd   generic android 6.0 --{'h': 121.75910253629952, 'd': 139.7, 'w': 68.48949517666847}
+samsung sm-g935f (galaxy s7 edge)   samsung sm-g935f (galaxy s7 edge) --{'h': 121.75910253629954, 'd': 139.7, 'w': 68.48949517666848}
+samsung s7   samsung sm-g930f (galaxy s7) --{'h': 112.9038950791141, 'd': 129.54, 'w': 63.50844098200168}
+huawei g700-u20 (ascend g700)   huawei g700-u20 (ascend g700) --{'h': 110.69009321481775, 'd': 127.0, 'w': 62.26317743333499}
+iphone    apple iphone 6s --{'h': 104.06118486860338, 'd': 119.38, 'w': 58.50516390663608}
+samsung galaxy j5   samsung sm-j500fn (galaxy j5) --{'h': 110.69009321481775, 'd': 127.0, 'w': 62.26317743333499}
+huawei vns-l22 (p9 lite)   huawei vns-l22 (p9 lite) --{'h': 115.11769694341048, 'd': 132.08, 'w': 64.7537045306684}
+one plus one    oneplus a0001 (one) --{'h': 121.75910253629954, 'd': 139.7, 'w': 68.48949517666848}
+apple iphone 6s plus   apple iphone 6s plus --{'h': 121.77372697389754, 'd': 139.7, 'w': 68.46348967797839}
+one plus one   oneplus a0001 (one) --{'h': 121.75910253629954, 'd': 139.7, 'w': 68.48949517666848}
+samsung sm-g900i (galaxy s5)   samsung sm-g900i (galaxy s5) --{'h': 112.90389507911411, 'd': 129.54, 'w': 63.50844098200168}
+iphone s7   apple iphone 7 --{'h': 104.06118486860336, 'd': 119.38, 'w': 58.50516390663608}
+lg nexus 4   google nexus 4 --{'h': 102.04165815979276, 'd': 119.0, 'w': 61.22499489587565}
+nexus 4   google nexus 4 --{'h': 102.36750547156353, 'd': 119.38, 'w': 61.42050328293811}
+samsung sm-n910g (galaxy note 4)   samsung sm-n910g (galaxy note 4) --{'h': 126.18670626489224, 'd': 144.78, 'w': 70.98002227400188}
+pc   google nexus 5 --{'h': 61.64054565900164, 'd': 125.73, 'w': 109.58319228266959}
+samsung gt-i9300 (galaxy s iii)   samsung gt-i9300 (galaxy s iii) --{'h': 106.26248948622505, 'd': 121.92, 'w': 59.77265033600158}
+iphone 6s   apple iphone 6s --{'h': 104.06118486860336, 'd': 119.38, 'w': 58.50516390663608}
+motorola xt1033 (moto g)   motorola xt1033 (moto g) --{'h': 99.62108389333598, 'd': 114.3, 'w': 56.036859690001485}
+samsung s5   samsung sm-g903w (galaxy s5 neo) --{'h': 112.90389507911411, 'd': 129.54, 'w': 63.50844098200168}
+dell s2340t   google chrome --{'h': 286.41061619334096, 'd': 584.2, 'w': 509.1744287881617}
+samsung a5   samsung sm-a500h (galaxy a5 duos) --{'h': 110.69009321481775, 'd': 127.0, 'w': 62.26317743333499}
+asus zenfone 2   generic android 5.0 --{'h': 121.75910253629954, 'd': 139.7, 'w': 68.48949517666848}
+iphone    apple iphone 6 --{'h': 104.06118486860336, 'd': 119.38, 'w': 58.50516390663608}
+samsung sm-g570y (j5 prime)   samsung sm-g570y (j5 prime) --{'h': 110.69009321481775, 'd': 127.0, 'w': 62.26317743333499}
+nexus 6p   google nexus 6p --{'h': 126.16828956281348, 'd': 144.78, 'w': 71.01275314191142}
+apple ipad mini 2   apple ipad air --{'h': 197.10399999999998, 'd': 246.38, 'w': 147.828}
+lenovo yoga 900   google chrome --{'h': 165.55127244516737, 'd': 337.82, 'w': 294.47432586184146}
+iphone 6s   apple iphone se --{'h': 88.51875897887955, 'd': 101.6, 'w': 49.86972336838285}
+google pixel    google pixel (pixel) --{'h': 110.67393821299429, 'd': 127.0, 'w': 62.29188872097493}
+samsung j5   generic android 6.0 --{'h': 110.69009321481775, 'd': 127.0, 'w': 62.26317743333499}
+google chrome   google chrome --None
+nexus 7   google nexus 7 --{'h': 150.77409845210468, 'd': 177.8, 'w': 94.2338115325654}
+lenovo g4+   motorola moto g (4) (moto g4) --{'h': 121.75910253629954, 'd': 139.7, 'w': 68.48949517666848}
+npkia lumia    generic windows phone 10.0 --None
+iphone6s   apple iphone se --{'h': 88.51875897887955, 'd': 101.6, 'w': 49.86972336838285}
+samsung sm-g920i (galaxy s6)   samsung sm-g920i (galaxy s6) --{'h': 112.9038950791141, 'd': 129.54, 'w': 63.50844098200168}
+ipad mini 1st gen   apple ipad 2 --{'h': 197.10399999999998, 'd': 246.38, 'w': 147.828}
+apple iphone 7 plus   apple iphone 7 plus --{'h': 104.04868762192868, 'd': 119.38, 'w': 58.52738678733488}
+surface 4 pro   google chrome --{'h': 171.95706082982102, 'd': 310.0, 'w': 257.93559124473154}
+mozilla firefox for android   mozilla firefox for android --None
+mozilla firefox for android   mozilla firefox for android --None
+oneplus a5000 (5)   oneplus a5000 (5) --{'h': 121.74133203429372, 'd': 139.7, 'w': 68.52107759307242}
+xiaomi mi 5s   xiaomi mi 5s --{'h': 114.0107960112623, 'd': 130.81, 'w': 64.13107275633503}
+oneplus rain a3000 (3)   oneplus rain a3000 (3) --{'h': 121.76312189906173, 'd': 139.7, 'w': 68.48234915212991}
+oneplus e1003 (x)   oneplus e1003 (x) --{'h': 110.69009321481776, 'd': 127.0, 'w': 62.26317743333499}
+motorola moto g (5) plus   motorola moto g (5) plus --{'h': 110.69009321481776, 'd': 127.0, 'w': 62.26317743333499}
+huawei mt7-l09 (ascend mate 7)   huawei mt7-l09 (ascend mate 7) --{'h': 132.82811185778132, 'd': 152.4, 'w': 74.715812920002}
+htc 2ps5200 (one x9)   htc 2ps5200 (one x9) --{'h': 121.75910253629954, 'd': 139.7, 'w': 68.48949517666848}
+samsung sm-j500y (galaxy j5)   samsung sm-j500y (galaxy j5) --{'h': 110.69009321481775, 'd': 127.0, 'w': 62.26317743333499}
+apple ipad pro 10.5 (2017)   apple ipad pro 10.5 (2017) --{'h': 213.35999999999999, 'd': 266.7, 'w': 160.01999999999998}
+microsoft surface pro 4   google chrome --{'h': 173.29943530468609, 'd': 312.42, 'w': 259.9491529570291}
+oneplus a3003 (3)   oneplus a3003 (3) --{'h': 121.76312189906173, 'd': 139.7, 'w': 68.48234915212991}
+apple ipad 2   apple ipad 2 --{'h': 197.10399999999998, 'd': 246.38, 'w': 147.828}
+meizu mz-m3 note (m3 note)   meizu mz-m3 note (m3 note) --{'h': 121.75910253629954, 'd': 139.7, 'w': 68.48949517666848}
+htc 0p6b (one m8)   htc 0p6b (one m8) --{'h': 110.69009321481776, 'd': 127.0, 'w': 62.26317743333499}
+samsung sm-p900 (galaxy note pro)   samsung sm-p900 (galaxy note pro) --{'h': 164.23607152818542, 'd': 309.88, 'w': 262.77771444509665}
+mozilla firefox for android   mozilla firefox for android --None
+mozilla firefox for android   mozilla firefox for android --None
+apple iphone   apple iphone --{'h': 104.06118486860336, 'd': 119.38, 'w': 58.50516390663608}
+microsoft surface pro 3   google chrome --{'h': 169.07261980944983, 'd': 304.8, 'w': 253.60892971417476}
+motorola moto g (4) (moto g4)   motorola moto g (4) (moto g4) --{'h': 121.75910253629954, 'd': 139.7, 'w': 68.48949517666848}
+google chrome surface pro 4   google chrome --{'h': 173.29943530468609, 'd': 312.42, 'w': 259.9491529570291}
+oneplus a0001 (one)   oneplus a0001 (one) --{'h': 121.75910253629954, 'd': 139.7, 'w': 68.48949517666848}
+mozilla firefox for android   mozilla firefox for android --None
