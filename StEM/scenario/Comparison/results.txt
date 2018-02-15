@@ -1,0 +1,43 @@
+F10 MM Expert: 1864      (MM Expert: 2176.9062   SD 757.6292   SE 189.4073)
+F10 FT Expert: 1028      (FT Expert: 1563.0234   SD 331.2637   SE  82.8159)
+F10 MM Novice: 2552      (MM Novice: 2885.2500   SD 914.1629   SE 228.5407)
+F10 FT Novice: 1419      (FT Novice: 2061.3281   SD 437.4223   SE 109.3556)
+
+AVG MM Expert: 2406 +230 (MM Expert: 2176.9062  < SD 757.6292   SE 189.4073)   ERR  9.5% / 10.6%
+AVG FT Expert: 1352 -211 (FT Expert: 1563.0234  < SD 331.2637   SE  82.8159)   ERR 15.6% / 13.5%
+AVG MM Novice: 3123 -238 (MM Novice: 2885.2500  < SD 914.1629   SE 228.5407)   ERR  7.6% /  8.2%
+AVG FT Novice: 1743 -318 (FT Novice: 2061.3281  < SD 437.4223   SE 109.3556)   ERR 18.2% / 15.4%
+
+S10 MM Expert: 3404      (MM Expert: 2176.9062   SD 757.6292   SE 189.4073)
+S10 FT Expert: 2017      (FT Expert: 1563.0234   SD 331.2637   SE  82.8159)
+S10 MM Novice: 4309      (MM Novice: 2885.2500   SD 914.1629   SE 228.5407)
+S10 FT Novice: 2623      (FT Novice: 2061.3281   SD 437.4223   SE 109.3556)
+
+
+
+AVG MM Expert: 2406  +62 (MM Middle: 2344.1484   SD 681.7699   SE 170.4425)   ERR  2.6% /  2.6%
+AVG FT Expert: 1352 -374 (FT Middle: 1726.1484   SD 360.8000   SE  90.2000)   ERR 27.7% / 21.7%
+
+FT Expert / MM Expert: 56.2% (71.8%)
+FT Novice / MM Novice: 55.8% (71.4%)
+
+\setlength{\tabcolsep}{1.5mm}
+\begin{table}[h]
+\small
+\centering
+\begin{tabular}{lr|rr|rr|rr}
+\toprule
+ & & Paper & & Tool & & Diff. & \\
+ & & SD & Time & Mean & Median & Mean & Median \\
+\midrule
+Expert & MM & .76 & 2.18 & 2.34 & 2.20 & -0,16 & -0,02 \\
+       & FT & .33 & 1.56 & 1.31 & 1.21 & 0,25 & \color{ko} 0,35 \\
+Novice & MM & .91 & 2.89 & 3.14 & 2.95 & -0,25 & -0,06 \\
+       & FT & .44 & 2.06 & 1.80 & 1.66 & 0,26 & 0,4 \\
+\bottomrule
+\end{tabular}
+\caption{Summary of the comparison between the Marking Menus and the FastTap technique in seconds
+         (using mean and median).
+         In red are the differences between the reported and predicted times which are greater than the reported standard deviation.}
+\label{tab:toolftmm}
+\end{table}

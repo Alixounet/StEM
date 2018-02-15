@@ -1,0 +1,48 @@
+						Data					Tool					Difference		
+		SD		Fastest	Mean	Slowest	Fastest	Mean	Slowest	Fastest	Mean	Slowest
+Icons	1.37	8.38	10.20	12.75	8,07	9,82	12,74	0,30	0,38	0,01
+Updates	1.06	5.58	6.96	8.73	5.11	6.29	8.55	0.48	0.67	0.18
+Map		1.50	5.78	8.05	10.94	5.44	7.67	11.60	0.34	0.38	-0.65
+Gmail	2.47	12.46	15.37	20.42	8.57	10.17	12.81	3.89	5.21	7.60
+Amazon	2.65	17.52	20.79	26.63	16.62	20.75	27.61	0.90	0.04	-0.98
+
+
+						Data					Tool					Difference
+		SD		Fastest	Median	Slowest	Fastest	Median	Slowest	Fastest	Mean	Slowest
+Icons	1.37	8.38	9.88	12.75	8,00	9,28	11,68	0,38	0,60	1,07
+Updates	1.06	5.58	6.82	8.73	4.91	5.61	7.34	0.67	1.20	1.39
+Map		1.50	5.78	7.96	10.94	5.43	6.94	10.41	0.34	1.03	0.53
+Gmail	2.47	12.46	14.86	20.42	8.25	9.39	11.50	4.21	5.46	8.91
+Amazon	2.65	17.52	19.75	26.63	16.18	19.08	25.17	1.34	0.67	1.45
+
+
+\setlength{\tabcolsep}{1.3mm}
+\begin{table}[h]
+\tiny
+\centering
+\begin{tabular}{r|rrrr|rrr|rrr}
+\toprule
+ & XP & & & & Tool & & & Diff. & & \\
+ & SD & Fastest & Mean & Slowest & Fastest & Mean & Slowest & Fastest & Mean & Slowest \\
+\midrule
+Icons & 1.37 & 8.38 & 10.20 & 12.75 & 8.07 & 9.82 & 12.74 & 0.30 & 0.38 & 0.01 \\
+Updates & 1.06 & 5.58 & 6.96 & 8.73 & 5.11 & 6.29 & 8.55 & 0.48 & 0.67 & 0.18 \\
+Map  & 1.50 & 5.78 & 8.05 & 10.94 & 5.44 & 7.67 & 11.60 & 0.34 & 0.38 & -0.65 \\
+Gmail & 2.47 & 12.46 & 15.37 & 20.42 & 8.57 & 10.17 & 12.81 & \color{ko} 3.89 & \color{ko} 5.21 & \color{ko} 7.60 \\
+Amazon & 2.65 & 17.52 & 20.79 & 26.63 & 16.62 & 20.75 & 27.61 & 0.90 & 0.04 & -0.98 \\
+\midrule
+ & SD & Fastest & Median & Slowest & Fastest & Median & Slowest & Fastest & Median & Slowest \\
+\midrule
+Icons & 1.37 & 8.38 & 9.88 & 12.75 & 8.00 & 9.28 & 11.68 & 0.38 & 0.60 & 1.07 \\
+Updates & 1.06 & 5.58 & 6.82 & 8.73 & 4.91 & 5.61 & 7.34 & 0.67 & 1.20 & \color{ko} 1.39 \\
+Map  & 1.50 & 5.78 & 7.96 & 10.94 & 5.43 & 6.94 & 10.41 & 0.34 & 1.03 & 0.53 \\
+Gmail & 2.47 & 12.46 & 14.86 & 20.42 & 8.25 & 9.39 & 11.50 & \color{ko} 4.21 & \color{ko} 5.46 & \color{ko} 8.91 \\
+Amazon & 2.65 & 17.52 & 19.75 & 26.63 & 16.18 & 19.08 & 25.17 & 1.34 & 0.67 & \color{ko} 1.45 \\
+\bottomrule
+\end{tabular}
+\caption{Summary of the interaction times in seconds
+         of each scenario (using mean and median).
+         To compute the fastest and the slowest times. we took a 10\% threshold (\ie 2 user trials in the experiment).
+         In red are the differences between measured and predicted times which are greater than a standard deviation of the measured times.}
+\label{tab:tooleval}
+\end{table}
