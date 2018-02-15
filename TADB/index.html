@@ -1,0 +1,108 @@
+<!--
+ * index.html
+ * StEM: Storyboard-Based Empirical
+ *       Modeling of Touch Interface
+ *       Performance
+ *
+ * 2017-02-01
+ *
+ * Code by: Alix Goguey, www.alixgoguey.fr
+ *
+ * Project Authors: Alix Goguey, Gery Casiez, Andy Cockburn and Carl Gutwin
+ *                  http://ns.inria.fr/mjolnir/StEM
+ *
+ * License: GNU General Public License v3.0
+ *   See https://github.com/Alixounet/StEM/blob/master/LICENSE
+ */
+-->
+
+<!DOCTYPE html>
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta id="viewport" name="viewport" content="minimal-ui, user-scalable=no, initial-scale=0.3">
+    <!-- <meta id="viewport" name="viewport" content="minimal-ui, user-scalable=no, initial-scale=0.4;"> -->
+    <!-- <meta id="viewport" name="viewport" content="minimal-ui, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no;"> -->
+    <!-- <meta id="viewport" name="viewport" content="initial-scale=1, maximum-scale=1"> -->
+    <head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <title>USASK Touch Experiment</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/client.js"></script>
+</head>
+<body id="main">
+    <div id="infos"></div>
+    <div id="previnfos" class="checked">&#60;</div>
+    <div id="nextinfos" class="unchecked">&#62;</div>
+    <div id="smallinstruction"></div>
+    <div id="task"></div>
+    <div id="agreement" class="button_agr but_inactive"></div>
+    <div id="noagreement" class="button_noagr but_inactive"></div>
+    <div id="demographics">
+        <div id="device" class="demo_category">
+            <div id="device_label" class="demo_label">Device brand and model:</div>
+            <input id="device_value" class="demo_input" type="text" placeholder="brand + model">
+            <!-- <div id="device_ok" class="demo_button unchecked">OK</div> -->
+        </div>
+
+        <div id="age" class="demo_category">
+            <div id="age_label" class="demo_label">Age:</div>
+            <div id="age_minus" class="demo_button unchecked">&nbsp;&nbsp;-&nbsp;&nbsp;</div>
+            <!-- <div id="age_value" class="demo_input">18</div> -->
+            <input id="age_value" class="demo_input" type="number" value="18">
+            <div id="age_plus" class="demo_button unchecked">&nbsp;&nbsp;+&nbsp;&nbsp;</div>
+        </div>
+
+        <div id="gender" class="demo_category">
+            <div id="gender_label" class="demo_label">Gender:</div>
+            <div id="gender_female" class="demo_button unchecked">Female</div>
+            <div id="gender_male" class="demo_button unchecked">Male</div>
+        </div>
+
+        <div id="handiness" class="demo_category">
+            <div id="hand_label" class="demo_label">Handedness:</div>
+            <div id="hand_left" class="demo_button unchecked">Left handed</div>
+            <div id="hand_right" class="demo_button unchecked">Right handed</div>
+        </div>
+
+        <div id="expertise" class="demo_category">
+            <div id="exp_label" class="demo_label">How often do you use touchscreens?</div><br>
+            <div id="exp_label2" class="demo_label"></div>
+            <div id="exp_daily" class="demo_button unchecked">Daily</div>
+            <div id="exp_weekly" class="demo_button unchecked">Weekly</div>
+            <div id="exp_rarely" class="demo_button unchecked">Rarely</div>
+        </div>
+    </div>
+    <div id="training" class="button_training but_inactive"></div>
+    <div id="finish" class="button_finish but_inactive">Finish</div>
+    <div id="newtask" class="button but_inactive"></div>
+    <div id="instructions"></div>
+    <div id="motivations"></div>
+
+    <div id="facebook" class="share">Share on Facebook</div>
+    <div id="twitter" class="share">Share on Twitter</div>
+    <div id="grips" class="demo_category">
+        How will you use your device for the next task?<br>
+        <div id="grip11" class="demo_button unchecked">
+            <!-- <object id="svggrip11" data="img/grip11.svg" type="image/svg+xml"></object> -->
+            <img id="svggrip11" src="img/grip11.png">
+            <br>One hand grips
+            <br>and interacts
+        </div>
+        <div id="grip21" class="demo_button unchecked">
+            <!-- <object id="svggrip21" data="img/grip21.svg" type="image/svg+xml"></object> -->
+            <img id="svggrip21" src="img/grip21.png">
+            <br>One hand grips,
+            <br>the&nbsp;other&nbsp;interacts
+        </div>
+        <div id="grip22" class="demo_button unchecked">
+            <!-- <object id="svggrip22" data="img/grip22.svg" type="image/svg+xml"></object> -->
+            <img id="svggrip22" src="img/grip22.png">
+            <br>Both hands
+            <br>interact
+        </div>
+    </div>
+</body>
+</html>

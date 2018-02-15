@@ -1,0 +1,7 @@
+// file containing the tasks
+
+// {"type": "tap", "cx":25, "cy":25, "r":10}
+// {"type": "pointing", "scx":11, "scy":11, "sr":10, "ecx":89, "ecy":89, "er":5}
+{"type": "drag", "scx":11, "scy":11, "sr":10, "ecx":81, "ecy":81, "er":13}
+// {"type": "rotation", "cx":50, "cy":50, "r":40, "angle":-90, "aperture":20}
+// {"type": "scaling", "cx":50, "cy":50, "sr":20, "er":40, "thickness":10}

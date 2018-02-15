@@ -1,0 +1,404 @@
+//
+// Tasks file generated with the 'task_generator.py' python script
+// Generated on 2017-01-20 02:10:20.358601
+//
+
+// Tap
+// Arguments:
+//      - cx: center x-coordinates of the circular target (in percentage of the viewport width)
+//      - cy: center y-coordinates of the circular target (in percentage of the viewport height)
+//      - r: radius of the circular target (in percentage of the viewport min(width/height))
+{"r": 5.0, "cy": 7.0, "cx": 7.0, "type": "tap"}
+{"r": 5.0, "cy": 28.5, "cx": 7.0, "type": "tap"}
+{"r": 5.0, "cy": 50.0, "cx": 7.0, "type": "tap"}
+{"r": 5.0, "cy": 71.5, "cx": 7.0, "type": "tap"}
+{"r": 5.0, "cy": 93.0, "cx": 7.0, "type": "tap"}
+{"r": 5.0, "cy": 7.0, "cx": 28.5, "type": "tap"}
+{"r": 5.0, "cy": 28.5, "cx": 28.5, "type": "tap"}
+{"r": 5.0, "cy": 50.0, "cx": 28.5, "type": "tap"}
+{"r": 5.0, "cy": 71.5, "cx": 28.5, "type": "tap"}
+{"r": 5.0, "cy": 93.0, "cx": 28.5, "type": "tap"}
+{"r": 5.0, "cy": 7.0, "cx": 50.0, "type": "tap"}
+{"r": 5.0, "cy": 28.5, "cx": 50.0, "type": "tap"}
+{"r": 5.0, "cy": 50.0, "cx": 50.0, "type": "tap"}
+{"r": 5.0, "cy": 71.5, "cx": 50.0, "type": "tap"}
+{"r": 5.0, "cy": 93.0, "cx": 50.0, "type": "tap"}
+{"r": 5.0, "cy": 7.0, "cx": 71.5, "type": "tap"}
+{"r": 5.0, "cy": 28.5, "cx": 71.5, "type": "tap"}
+{"r": 5.0, "cy": 50.0, "cx": 71.5, "type": "tap"}
+{"r": 5.0, "cy": 71.5, "cx": 71.5, "type": "tap"}
+{"r": 5.0, "cy": 93.0, "cx": 71.5, "type": "tap"}
+{"r": 5.0, "cy": 7.0, "cx": 93.0, "type": "tap"}
+{"r": 5.0, "cy": 28.5, "cx": 93.0, "type": "tap"}
+{"r": 5.0, "cy": 50.0, "cx": 93.0, "type": "tap"}
+{"r": 5.0, "cy": 71.5, "cx": 93.0, "type": "tap"}
+{"r": 5.0, "cy": 93.0, "cx": 93.0, "type": "tap"}
+{"r": 10.0, "cy": 12.0, "cx": 12.0, "type": "tap"}
+{"r": 10.0, "cy": 31.0, "cx": 12.0, "type": "tap"}
+{"r": 10.0, "cy": 50.0, "cx": 12.0, "type": "tap"}
+{"r": 10.0, "cy": 69.0, "cx": 12.0, "type": "tap"}
+{"r": 10.0, "cy": 88.0, "cx": 12.0, "type": "tap"}
+{"r": 10.0, "cy": 12.0, "cx": 31.0, "type": "tap"}
+{"r": 10.0, "cy": 31.0, "cx": 31.0, "type": "tap"}
+{"r": 10.0, "cy": 50.0, "cx": 31.0, "type": "tap"}
+{"r": 10.0, "cy": 69.0, "cx": 31.0, "type": "tap"}
+{"r": 10.0, "cy": 88.0, "cx": 31.0, "type": "tap"}
+{"r": 10.0, "cy": 12.0, "cx": 50.0, "type": "tap"}
+{"r": 10.0, "cy": 31.0, "cx": 50.0, "type": "tap"}
+{"r": 10.0, "cy": 50.0, "cx": 50.0, "type": "tap"}
+{"r": 10.0, "cy": 69.0, "cx": 50.0, "type": "tap"}
+{"r": 10.0, "cy": 88.0, "cx": 50.0, "type": "tap"}
+{"r": 10.0, "cy": 12.0, "cx": 69.0, "type": "tap"}
+{"r": 10.0, "cy": 31.0, "cx": 69.0, "type": "tap"}
+{"r": 10.0, "cy": 50.0, "cx": 69.0, "type": "tap"}
+{"r": 10.0, "cy": 69.0, "cx": 69.0, "type": "tap"}
+{"r": 10.0, "cy": 88.0, "cx": 69.0, "type": "tap"}
+{"r": 10.0, "cy": 12.0, "cx": 88.0, "type": "tap"}
+{"r": 10.0, "cy": 31.0, "cx": 88.0, "type": "tap"}
+{"r": 10.0, "cy": 50.0, "cx": 88.0, "type": "tap"}
+{"r": 10.0, "cy": 69.0, "cx": 88.0, "type": "tap"}
+{"r": 10.0, "cy": 88.0, "cx": 88.0, "type": "tap"}
+{"r": 15.0, "cy": 17.0, "cx": 17.0, "type": "tap"}
+{"r": 15.0, "cy": 33.5, "cx": 17.0, "type": "tap"}
+{"r": 15.0, "cy": 50.0, "cx": 17.0, "type": "tap"}
+{"r": 15.0, "cy": 66.5, "cx": 17.0, "type": "tap"}
+{"r": 15.0, "cy": 83.0, "cx": 17.0, "type": "tap"}
+{"r": 15.0, "cy": 17.0, "cx": 33.5, "type": "tap"}
+{"r": 15.0, "cy": 33.5, "cx": 33.5, "type": "tap"}
+{"r": 15.0, "cy": 50.0, "cx": 33.5, "type": "tap"}
+{"r": 15.0, "cy": 66.5, "cx": 33.5, "type": "tap"}
+{"r": 15.0, "cy": 83.0, "cx": 33.5, "type": "tap"}
+{"r": 15.0, "cy": 17.0, "cx": 50.0, "type": "tap"}
+{"r": 15.0, "cy": 33.5, "cx": 50.0, "type": "tap"}
+{"r": 15.0, "cy": 50.0, "cx": 50.0, "type": "tap"}
+{"r": 15.0, "cy": 66.5, "cx": 50.0, "type": "tap"}
+{"r": 15.0, "cy": 83.0, "cx": 50.0, "type": "tap"}
+{"r": 15.0, "cy": 17.0, "cx": 66.5, "type": "tap"}
+{"r": 15.0, "cy": 33.5, "cx": 66.5, "type": "tap"}
+{"r": 15.0, "cy": 50.0, "cx": 66.5, "type": "tap"}
+{"r": 15.0, "cy": 66.5, "cx": 66.5, "type": "tap"}
+{"r": 15.0, "cy": 83.0, "cx": 66.5, "type": "tap"}
+{"r": 15.0, "cy": 17.0, "cx": 83.0, "type": "tap"}
+{"r": 15.0, "cy": 33.5, "cx": 83.0, "type": "tap"}
+{"r": 15.0, "cy": 50.0, "cx": 83.0, "type": "tap"}
+{"r": 15.0, "cy": 66.5, "cx": 83.0, "type": "tap"}
+{"r": 15.0, "cy": 83.0, "cx": 83.0, "type": "tap"}
+
+// Pointing
+// Arguments:
+//      - scx: center x-coordinates of the circular start area (in percentage of the viewport width)
+//      - scy: center y-coordinates of the circular start area (in percentage of the viewport height)
+//      - sr: radius of the circular start area (in percentage of the viewport min(width/height))
+//      - ecx: center x-coordinates of the circular target (in percentage of the viewport width)
+//      - ecy: center y-coordinates of the circular target (in percentage of the viewport height)
+//      - er: radius of the circular target (in percentage of the viewport min(width/height))
+{"sr": 10, "scy": 88.0, "scx": 88.0, "er": 5.0, "type": "pointing", "ecy": 7.0, "ecx": 7.0}
+{"sr": 10, "scy": 66.5, "scx": 88.0, "er": 5.0, "type": "pointing", "ecy": 28.5, "ecx": 7.0}
+{"sr": 10, "scy": 45.0, "scx": 88.0, "er": 5.0, "type": "pointing", "ecy": 50.0, "ecx": 7.0}
+{"sr": 10, "scy": 23.5, "scx": 88.0, "er": 5.0, "type": "pointing", "ecy": 71.5, "ecx": 7.0}
+{"sr": 10, "scy": 12.0, "scx": 88.0, "er": 5.0, "type": "pointing", "ecy": 93.0, "ecx": 7.0}
+{"sr": 10, "scy": 88.0, "scx": 66.5, "er": 5.0, "type": "pointing", "ecy": 7.0, "ecx": 28.5}
+{"sr": 10, "scy": 12.0, "scx": 66.5, "er": 5.0, "type": "pointing", "ecy": 93.0, "ecx": 28.5}
+{"sr": 10, "scy": 88.0, "scx": 45.0, "er": 5.0, "type": "pointing", "ecy": 7.0, "ecx": 50.0}
+{"sr": 10, "scy": 12.0, "scx": 45.0, "er": 5.0, "type": "pointing", "ecy": 93.0, "ecx": 50.0}
+{"sr": 10, "scy": 88.0, "scx": 23.5, "er": 5.0, "type": "pointing", "ecy": 7.0, "ecx": 71.5}
+{"sr": 10, "scy": 12.0, "scx": 23.5, "er": 5.0, "type": "pointing", "ecy": 93.0, "ecx": 71.5}
+{"sr": 10, "scy": 88.0, "scx": 12.0, "er": 5.0, "type": "pointing", "ecy": 7.0, "ecx": 93.0}
+{"sr": 10, "scy": 66.5, "scx": 12.0, "er": 5.0, "type": "pointing", "ecy": 28.5, "ecx": 93.0}
+{"sr": 10, "scy": 45.0, "scx": 12.0, "er": 5.0, "type": "pointing", "ecy": 50.0, "ecx": 93.0}
+{"sr": 10, "scy": 23.5, "scx": 12.0, "er": 5.0, "type": "pointing", "ecy": 71.5, "ecx": 93.0}
+{"sr": 10, "scy": 12.0, "scx": 12.0, "er": 5.0, "type": "pointing", "ecy": 93.0, "ecx": 93.0}
+{"sr": 10, "scy": 62.0, "scx": 62.0, "er": 5.0, "type": "pointing", "ecy": 43.0, "ecx": 43.0}
+{"sr": 10, "scy": 48.5, "scx": 62.0, "er": 5.0, "type": "pointing", "ecy": 46.5, "ecx": 43.0}
+{"sr": 10, "scy": 45.0, "scx": 62.0, "er": 5.0, "type": "pointing", "ecy": 50.0, "ecx": 43.0}
+{"sr": 10, "scy": 41.5, "scx": 62.0, "er": 5.0, "type": "pointing", "ecy": 53.5, "ecx": 43.0}
+{"sr": 10, "scy": 38.0, "scx": 62.0, "er": 5.0, "type": "pointing", "ecy": 57.0, "ecx": 43.0}
+{"sr": 10, "scy": 62.0, "scx": 48.5, "er": 5.0, "type": "pointing", "ecy": 43.0, "ecx": 46.5}
+{"sr": 10, "scy": 38.0, "scx": 48.5, "er": 5.0, "type": "pointing", "ecy": 57.0, "ecx": 46.5}
+{"sr": 10, "scy": 62.0, "scx": 45.0, "er": 5.0, "type": "pointing", "ecy": 43.0, "ecx": 50.0}
+{"sr": 10, "scy": 38.0, "scx": 45.0, "er": 5.0, "type": "pointing", "ecy": 57.0, "ecx": 50.0}
+{"sr": 10, "scy": 62.0, "scx": 41.5, "er": 5.0, "type": "pointing", "ecy": 43.0, "ecx": 53.5}
+{"sr": 10, "scy": 38.0, "scx": 41.5, "er": 5.0, "type": "pointing", "ecy": 57.0, "ecx": 53.5}
+{"sr": 10, "scy": 62.0, "scx": 38.0, "er": 5.0, "type": "pointing", "ecy": 43.0, "ecx": 57.0}
+{"sr": 10, "scy": 48.5, "scx": 38.0, "er": 5.0, "type": "pointing", "ecy": 46.5, "ecx": 57.0}
+{"sr": 10, "scy": 45.0, "scx": 38.0, "er": 5.0, "type": "pointing", "ecy": 50.0, "ecx": 57.0}
+{"sr": 10, "scy": 41.5, "scx": 38.0, "er": 5.0, "type": "pointing", "ecy": 53.5, "ecx": 57.0}
+{"sr": 10, "scy": 38.0, "scx": 38.0, "er": 5.0, "type": "pointing", "ecy": 57.0, "ecx": 57.0}
+{"sr": 10, "scy": 88.0, "scx": 88.0, "er": 10.0, "type": "pointing", "ecy": 12.0, "ecx": 12.0}
+{"sr": 10, "scy": 69.0, "scx": 88.0, "er": 10.0, "type": "pointing", "ecy": 31.0, "ecx": 12.0}
+{"sr": 10, "scy": 50.0, "scx": 88.0, "er": 10.0, "type": "pointing", "ecy": 50.0, "ecx": 12.0}
+{"sr": 10, "scy": 31.0, "scx": 88.0, "er": 10.0, "type": "pointing", "ecy": 69.0, "ecx": 12.0}
+{"sr": 10, "scy": 12.0, "scx": 88.0, "er": 10.0, "type": "pointing", "ecy": 88.0, "ecx": 12.0}
+{"sr": 10, "scy": 88.0, "scx": 69.0, "er": 10.0, "type": "pointing", "ecy": 12.0, "ecx": 31.0}
+{"sr": 10, "scy": 12.0, "scx": 69.0, "er": 10.0, "type": "pointing", "ecy": 88.0, "ecx": 31.0}
+{"sr": 10, "scy": 88.0, "scx": 50.0, "er": 10.0, "type": "pointing", "ecy": 12.0, "ecx": 50.0}
+{"sr": 10, "scy": 12.0, "scx": 50.0, "er": 10.0, "type": "pointing", "ecy": 88.0, "ecx": 50.0}
+{"sr": 10, "scy": 88.0, "scx": 31.0, "er": 10.0, "type": "pointing", "ecy": 12.0, "ecx": 69.0}
+{"sr": 10, "scy": 12.0, "scx": 31.0, "er": 10.0, "type": "pointing", "ecy": 88.0, "ecx": 69.0}
+{"sr": 10, "scy": 88.0, "scx": 12.0, "er": 10.0, "type": "pointing", "ecy": 12.0, "ecx": 88.0}
+{"sr": 10, "scy": 69.0, "scx": 12.0, "er": 10.0, "type": "pointing", "ecy": 31.0, "ecx": 88.0}
+{"sr": 10, "scy": 50.0, "scx": 12.0, "er": 10.0, "type": "pointing", "ecy": 50.0, "ecx": 88.0}
+{"sr": 10, "scy": 31.0, "scx": 12.0, "er": 10.0, "type": "pointing", "ecy": 69.0, "ecx": 88.0}
+{"sr": 10, "scy": 12.0, "scx": 12.0, "er": 10.0, "type": "pointing", "ecy": 88.0, "ecx": 88.0}
+{"sr": 10, "scy": 62.0, "scx": 62.0, "er": 10.0, "type": "pointing", "ecy": 38.0, "ecx": 38.0}
+{"sr": 10, "scy": 56.0, "scx": 62.0, "er": 10.0, "type": "pointing", "ecy": 44.0, "ecx": 38.0}
+{"sr": 10, "scy": 50.0, "scx": 62.0, "er": 10.0, "type": "pointing", "ecy": 50.0, "ecx": 38.0}
+{"sr": 10, "scy": 44.0, "scx": 62.0, "er": 10.0, "type": "pointing", "ecy": 56.0, "ecx": 38.0}
+{"sr": 10, "scy": 38.0, "scx": 62.0, "er": 10.0, "type": "pointing", "ecy": 62.0, "ecx": 38.0}
+{"sr": 10, "scy": 62.0, "scx": 56.0, "er": 10.0, "type": "pointing", "ecy": 38.0, "ecx": 44.0}
+{"sr": 10, "scy": 38.0, "scx": 56.0, "er": 10.0, "type": "pointing", "ecy": 62.0, "ecx": 44.0}
+{"sr": 10, "scy": 62.0, "scx": 50.0, "er": 10.0, "type": "pointing", "ecy": 38.0, "ecx": 50.0}
+{"sr": 10, "scy": 38.0, "scx": 50.0, "er": 10.0, "type": "pointing", "ecy": 62.0, "ecx": 50.0}
+{"sr": 10, "scy": 62.0, "scx": 44.0, "er": 10.0, "type": "pointing", "ecy": 38.0, "ecx": 56.0}
+{"sr": 10, "scy": 38.0, "scx": 44.0, "er": 10.0, "type": "pointing", "ecy": 62.0, "ecx": 56.0}
+{"sr": 10, "scy": 62.0, "scx": 38.0, "er": 10.0, "type": "pointing", "ecy": 38.0, "ecx": 62.0}
+{"sr": 10, "scy": 56.0, "scx": 38.0, "er": 10.0, "type": "pointing", "ecy": 44.0, "ecx": 62.0}
+{"sr": 10, "scy": 50.0, "scx": 38.0, "er": 10.0, "type": "pointing", "ecy": 50.0, "ecx": 62.0}
+{"sr": 10, "scy": 44.0, "scx": 38.0, "er": 10.0, "type": "pointing", "ecy": 56.0, "ecx": 62.0}
+{"sr": 10, "scy": 38.0, "scx": 38.0, "er": 10.0, "type": "pointing", "ecy": 62.0, "ecx": 62.0}
+{"sr": 10, "scy": 88.0, "scx": 88.0, "er": 15.0, "type": "pointing", "ecy": 17.0, "ecx": 17.0}
+{"sr": 10, "scy": 71.5, "scx": 88.0, "er": 15.0, "type": "pointing", "ecy": 33.5, "ecx": 17.0}
+{"sr": 10, "scy": 55.0, "scx": 88.0, "er": 15.0, "type": "pointing", "ecy": 50.0, "ecx": 17.0}
+{"sr": 10, "scy": 38.5, "scx": 88.0, "er": 15.0, "type": "pointing", "ecy": 66.5, "ecx": 17.0}
+{"sr": 10, "scy": 12.0, "scx": 88.0, "er": 15.0, "type": "pointing", "ecy": 83.0, "ecx": 17.0}
+{"sr": 10, "scy": 88.0, "scx": 71.5, "er": 15.0, "type": "pointing", "ecy": 17.0, "ecx": 33.5}
+{"sr": 10, "scy": 12.0, "scx": 71.5, "er": 15.0, "type": "pointing", "ecy": 83.0, "ecx": 33.5}
+{"sr": 10, "scy": 88.0, "scx": 55.0, "er": 15.0, "type": "pointing", "ecy": 17.0, "ecx": 50.0}
+{"sr": 10, "scy": 12.0, "scx": 55.0, "er": 15.0, "type": "pointing", "ecy": 83.0, "ecx": 50.0}
+{"sr": 10, "scy": 88.0, "scx": 38.5, "er": 15.0, "type": "pointing", "ecy": 17.0, "ecx": 66.5}
+{"sr": 10, "scy": 12.0, "scx": 38.5, "er": 15.0, "type": "pointing", "ecy": 83.0, "ecx": 66.5}
+{"sr": 10, "scy": 88.0, "scx": 12.0, "er": 15.0, "type": "pointing", "ecy": 17.0, "ecx": 83.0}
+{"sr": 10, "scy": 71.5, "scx": 12.0, "er": 15.0, "type": "pointing", "ecy": 33.5, "ecx": 83.0}
+{"sr": 10, "scy": 55.0, "scx": 12.0, "er": 15.0, "type": "pointing", "ecy": 50.0, "ecx": 83.0}
+{"sr": 10, "scy": 38.5, "scx": 12.0, "er": 15.0, "type": "pointing", "ecy": 66.5, "ecx": 83.0}
+{"sr": 10, "scy": 12.0, "scx": 12.0, "er": 15.0, "type": "pointing", "ecy": 83.0, "ecx": 83.0}
+{"sr": 10, "scy": 62.0, "scx": 62.0, "er": 15.0, "type": "pointing", "ecy": 33.0, "ecx": 33.0}
+{"sr": 10, "scy": 63.5, "scx": 62.0, "er": 15.0, "type": "pointing", "ecy": 41.5, "ecx": 33.0}
+{"sr": 10, "scy": 55.0, "scx": 62.0, "er": 15.0, "type": "pointing", "ecy": 50.0, "ecx": 33.0}
+{"sr": 10, "scy": 46.5, "scx": 62.0, "er": 15.0, "type": "pointing", "ecy": 58.5, "ecx": 33.0}
+{"sr": 10, "scy": 38.0, "scx": 62.0, "er": 15.0, "type": "pointing", "ecy": 67.0, "ecx": 33.0}
+{"sr": 10, "scy": 62.0, "scx": 63.5, "er": 15.0, "type": "pointing", "ecy": 33.0, "ecx": 41.5}
+{"sr": 10, "scy": 38.0, "scx": 63.5, "er": 15.0, "type": "pointing", "ecy": 67.0, "ecx": 41.5}
+{"sr": 10, "scy": 62.0, "scx": 55.0, "er": 15.0, "type": "pointing", "ecy": 33.0, "ecx": 50.0}
+{"sr": 10, "scy": 38.0, "scx": 55.0, "er": 15.0, "type": "pointing", "ecy": 67.0, "ecx": 50.0}
+{"sr": 10, "scy": 62.0, "scx": 46.5, "er": 15.0, "type": "pointing", "ecy": 33.0, "ecx": 58.5}
+{"sr": 10, "scy": 38.0, "scx": 46.5, "er": 15.0, "type": "pointing", "ecy": 67.0, "ecx": 58.5}
+{"sr": 10, "scy": 62.0, "scx": 38.0, "er": 15.0, "type": "pointing", "ecy": 33.0, "ecx": 67.0}
+{"sr": 10, "scy": 63.5, "scx": 38.0, "er": 15.0, "type": "pointing", "ecy": 41.5, "ecx": 67.0}
+{"sr": 10, "scy": 55.0, "scx": 38.0, "er": 15.0, "type": "pointing", "ecy": 50.0, "ecx": 67.0}
+{"sr": 10, "scy": 46.5, "scx": 38.0, "er": 15.0, "type": "pointing", "ecy": 58.5, "ecx": 67.0}
+{"sr": 10, "scy": 38.0, "scx": 38.0, "er": 15.0, "type": "pointing", "ecy": 67.0, "ecx": 67.0}
+
+// Drag
+// Arguments:
+//      - scx: center x-coordinates of the circular token (in percentage of the viewport width)
+//      - scy: center y-coordinates of the circular token (in percentage of the viewport height)
+//      - sr: radius of the circular token (in percentage of the viewport min(width/height))
+//      - ecx: center x-coordinates of the circular target (in percentage of the viewport width)
+//      - ecy: center y-coordinates of the circular target (in percentage of the viewport height)
+//      - er: radius of the circular target (in percentage of the viewport min(width/height))
+{"sr": 10, "scy": 88.0, "scx": 88.0, "er": 12.5, "type": "drag", "ecy": 14.5, "ecx": 14.5}
+{"sr": 10, "scy": 70.25, "scx": 88.0, "er": 12.5, "type": "drag", "ecy": 32.25, "ecx": 14.5}
+{"sr": 10, "scy": 52.5, "scx": 88.0, "er": 12.5, "type": "drag", "ecy": 50.0, "ecx": 14.5}
+{"sr": 10, "scy": 34.75, "scx": 88.0, "er": 12.5, "type": "drag", "ecy": 67.75, "ecx": 14.5}
+{"sr": 10, "scy": 12.0, "scx": 88.0, "er": 12.5, "type": "drag", "ecy": 85.5, "ecx": 14.5}
+{"sr": 10, "scy": 88.0, "scx": 70.25, "er": 12.5, "type": "drag", "ecy": 14.5, "ecx": 32.25}
+{"sr": 10, "scy": 12.0, "scx": 70.25, "er": 12.5, "type": "drag", "ecy": 85.5, "ecx": 32.25}
+{"sr": 10, "scy": 88.0, "scx": 52.5, "er": 12.5, "type": "drag", "ecy": 14.5, "ecx": 50.0}
+{"sr": 10, "scy": 12.0, "scx": 52.5, "er": 12.5, "type": "drag", "ecy": 85.5, "ecx": 50.0}
+{"sr": 10, "scy": 88.0, "scx": 34.75, "er": 12.5, "type": "drag", "ecy": 14.5, "ecx": 67.75}
+{"sr": 10, "scy": 12.0, "scx": 34.75, "er": 12.5, "type": "drag", "ecy": 85.5, "ecx": 67.75}
+{"sr": 10, "scy": 88.0, "scx": 12.0, "er": 12.5, "type": "drag", "ecy": 14.5, "ecx": 85.5}
+{"sr": 10, "scy": 70.25, "scx": 12.0, "er": 12.5, "type": "drag", "ecy": 32.25, "ecx": 85.5}
+{"sr": 10, "scy": 52.5, "scx": 12.0, "er": 12.5, "type": "drag", "ecy": 50.0, "ecx": 85.5}
+{"sr": 10, "scy": 34.75, "scx": 12.0, "er": 12.5, "type": "drag", "ecy": 67.75, "ecx": 85.5}
+{"sr": 10, "scy": 12.0, "scx": 12.0, "er": 12.5, "type": "drag", "ecy": 85.5, "ecx": 85.5}
+{"sr": 10, "scy": 62.0, "scx": 62.0, "er": 12.5, "type": "drag", "ecy": 35.5, "ecx": 35.5}
+{"sr": 10, "scy": 59.75, "scx": 62.0, "er": 12.5, "type": "drag", "ecy": 42.75, "ecx": 35.5}
+{"sr": 10, "scy": 52.5, "scx": 62.0, "er": 12.5, "type": "drag", "ecy": 50.0, "ecx": 35.5}
+{"sr": 10, "scy": 45.25, "scx": 62.0, "er": 12.5, "type": "drag", "ecy": 57.25, "ecx": 35.5}
+{"sr": 10, "scy": 38.0, "scx": 62.0, "er": 12.5, "type": "drag", "ecy": 64.5, "ecx": 35.5}
+{"sr": 10, "scy": 62.0, "scx": 59.75, "er": 12.5, "type": "drag", "ecy": 35.5, "ecx": 42.75}
+{"sr": 10, "scy": 38.0, "scx": 59.75, "er": 12.5, "type": "drag", "ecy": 64.5, "ecx": 42.75}
+{"sr": 10, "scy": 62.0, "scx": 52.5, "er": 12.5, "type": "drag", "ecy": 35.5, "ecx": 50.0}
+{"sr": 10, "scy": 38.0, "scx": 52.5, "er": 12.5, "type": "drag", "ecy": 64.5, "ecx": 50.0}
+{"sr": 10, "scy": 62.0, "scx": 45.25, "er": 12.5, "type": "drag", "ecy": 35.5, "ecx": 57.25}
+{"sr": 10, "scy": 38.0, "scx": 45.25, "er": 12.5, "type": "drag", "ecy": 64.5, "ecx": 57.25}
+{"sr": 10, "scy": 62.0, "scx": 38.0, "er": 12.5, "type": "drag", "ecy": 35.5, "ecx": 64.5}
+{"sr": 10, "scy": 59.75, "scx": 38.0, "er": 12.5, "type": "drag", "ecy": 42.75, "ecx": 64.5}
+{"sr": 10, "scy": 52.5, "scx": 38.0, "er": 12.5, "type": "drag", "ecy": 50.0, "ecx": 64.5}
+{"sr": 10, "scy": 45.25, "scx": 38.0, "er": 12.5, "type": "drag", "ecy": 57.25, "ecx": 64.5}
+{"sr": 10, "scy": 38.0, "scx": 38.0, "er": 12.5, "type": "drag", "ecy": 64.5, "ecx": 64.5}
+{"sr": 10, "scy": 88.0, "scx": 88.0, "er": 15, "type": "drag", "ecy": 17.0, "ecx": 17.0}
+{"sr": 10, "scy": 71.5, "scx": 88.0, "er": 15, "type": "drag", "ecy": 33.5, "ecx": 17.0}
+{"sr": 10, "scy": 55.0, "scx": 88.0, "er": 15, "type": "drag", "ecy": 50.0, "ecx": 17.0}
+{"sr": 10, "scy": 38.5, "scx": 88.0, "er": 15, "type": "drag", "ecy": 66.5, "ecx": 17.0}
+{"sr": 10, "scy": 12.0, "scx": 88.0, "er": 15, "type": "drag", "ecy": 83.0, "ecx": 17.0}
+{"sr": 10, "scy": 88.0, "scx": 71.5, "er": 15, "type": "drag", "ecy": 17.0, "ecx": 33.5}
+{"sr": 10, "scy": 12.0, "scx": 71.5, "er": 15, "type": "drag", "ecy": 83.0, "ecx": 33.5}
+{"sr": 10, "scy": 88.0, "scx": 55.0, "er": 15, "type": "drag", "ecy": 17.0, "ecx": 50.0}
+{"sr": 10, "scy": 12.0, "scx": 55.0, "er": 15, "type": "drag", "ecy": 83.0, "ecx": 50.0}
+{"sr": 10, "scy": 88.0, "scx": 38.5, "er": 15, "type": "drag", "ecy": 17.0, "ecx": 66.5}
+{"sr": 10, "scy": 12.0, "scx": 38.5, "er": 15, "type": "drag", "ecy": 83.0, "ecx": 66.5}
+{"sr": 10, "scy": 88.0, "scx": 12.0, "er": 15, "type": "drag", "ecy": 17.0, "ecx": 83.0}
+{"sr": 10, "scy": 71.5, "scx": 12.0, "er": 15, "type": "drag", "ecy": 33.5, "ecx": 83.0}
+{"sr": 10, "scy": 55.0, "scx": 12.0, "er": 15, "type": "drag", "ecy": 50.0, "ecx": 83.0}
+{"sr": 10, "scy": 38.5, "scx": 12.0, "er": 15, "type": "drag", "ecy": 66.5, "ecx": 83.0}
+{"sr": 10, "scy": 12.0, "scx": 12.0, "er": 15, "type": "drag", "ecy": 83.0, "ecx": 83.0}
+{"sr": 10, "scy": 62.0, "scx": 62.0, "er": 15, "type": "drag", "ecy": 33.0, "ecx": 33.0}
+{"sr": 10, "scy": 63.5, "scx": 62.0, "er": 15, "type": "drag", "ecy": 41.5, "ecx": 33.0}
+{"sr": 10, "scy": 55.0, "scx": 62.0, "er": 15, "type": "drag", "ecy": 50.0, "ecx": 33.0}
+{"sr": 10, "scy": 46.5, "scx": 62.0, "er": 15, "type": "drag", "ecy": 58.5, "ecx": 33.0}
+{"sr": 10, "scy": 38.0, "scx": 62.0, "er": 15, "type": "drag", "ecy": 67.0, "ecx": 33.0}
+{"sr": 10, "scy": 62.0, "scx": 63.5, "er": 15, "type": "drag", "ecy": 33.0, "ecx": 41.5}
+{"sr": 10, "scy": 38.0, "scx": 63.5, "er": 15, "type": "drag", "ecy": 67.0, "ecx": 41.5}
+{"sr": 10, "scy": 62.0, "scx": 55.0, "er": 15, "type": "drag", "ecy": 33.0, "ecx": 50.0}
+{"sr": 10, "scy": 38.0, "scx": 55.0, "er": 15, "type": "drag", "ecy": 67.0, "ecx": 50.0}
+{"sr": 10, "scy": 62.0, "scx": 46.5, "er": 15, "type": "drag", "ecy": 33.0, "ecx": 58.5}
+{"sr": 10, "scy": 38.0, "scx": 46.5, "er": 15, "type": "drag", "ecy": 67.0, "ecx": 58.5}
+{"sr": 10, "scy": 62.0, "scx": 38.0, "er": 15, "type": "drag", "ecy": 33.0, "ecx": 67.0}
+{"sr": 10, "scy": 63.5, "scx": 38.0, "er": 15, "type": "drag", "ecy": 41.5, "ecx": 67.0}
+{"sr": 10, "scy": 55.0, "scx": 38.0, "er": 15, "type": "drag", "ecy": 50.0, "ecx": 67.0}
+{"sr": 10, "scy": 46.5, "scx": 38.0, "er": 15, "type": "drag", "ecy": 58.5, "ecx": 67.0}
+{"sr": 10, "scy": 38.0, "scx": 38.0, "er": 15, "type": "drag", "ecy": 67.0, "ecx": 67.0}
+{"sr": 10, "scy": 88.0, "scx": 88.0, "er": 17.5, "type": "drag", "ecy": 19.5, "ecx": 19.5}
+{"sr": 10, "scy": 72.75, "scx": 88.0, "er": 17.5, "type": "drag", "ecy": 34.75, "ecx": 19.5}
+{"sr": 10, "scy": 57.5, "scx": 88.0, "er": 17.5, "type": "drag", "ecy": 50.0, "ecx": 19.5}
+{"sr": 10, "scy": 42.25, "scx": 88.0, "er": 17.5, "type": "drag", "ecy": 65.25, "ecx": 19.5}
+{"sr": 10, "scy": 12.0, "scx": 88.0, "er": 17.5, "type": "drag", "ecy": 80.5, "ecx": 19.5}
+{"sr": 10, "scy": 88.0, "scx": 72.75, "er": 17.5, "type": "drag", "ecy": 19.5, "ecx": 34.75}
+{"sr": 10, "scy": 12.0, "scx": 72.75, "er": 17.5, "type": "drag", "ecy": 80.5, "ecx": 34.75}
+{"sr": 10, "scy": 88.0, "scx": 57.5, "er": 17.5, "type": "drag", "ecy": 19.5, "ecx": 50.0}
+{"sr": 10, "scy": 12.0, "scx": 57.5, "er": 17.5, "type": "drag", "ecy": 80.5, "ecx": 50.0}
+{"sr": 10, "scy": 88.0, "scx": 42.25, "er": 17.5, "type": "drag", "ecy": 19.5, "ecx": 65.25}
+{"sr": 10, "scy": 12.0, "scx": 42.25, "er": 17.5, "type": "drag", "ecy": 80.5, "ecx": 65.25}
+{"sr": 10, "scy": 88.0, "scx": 12.0, "er": 17.5, "type": "drag", "ecy": 19.5, "ecx": 80.5}
+{"sr": 10, "scy": 72.75, "scx": 12.0, "er": 17.5, "type": "drag", "ecy": 34.75, "ecx": 80.5}
+{"sr": 10, "scy": 57.5, "scx": 12.0, "er": 17.5, "type": "drag", "ecy": 50.0, "ecx": 80.5}
+{"sr": 10, "scy": 42.25, "scx": 12.0, "er": 17.5, "type": "drag", "ecy": 65.25, "ecx": 80.5}
+{"sr": 10, "scy": 12.0, "scx": 12.0, "er": 17.5, "type": "drag", "ecy": 80.5, "ecx": 80.5}
+{"sr": 10, "scy": 62.0, "scx": 62.0, "er": 17.5, "type": "drag", "ecy": 30.5, "ecx": 30.5}
+{"sr": 10, "scy": 67.25, "scx": 62.0, "er": 17.5, "type": "drag", "ecy": 40.25, "ecx": 30.5}
+{"sr": 10, "scy": 57.5, "scx": 62.0, "er": 17.5, "type": "drag", "ecy": 50.0, "ecx": 30.5}
+{"sr": 10, "scy": 47.75, "scx": 62.0, "er": 17.5, "type": "drag", "ecy": 59.75, "ecx": 30.5}
+{"sr": 10, "scy": 38.0, "scx": 62.0, "er": 17.5, "type": "drag", "ecy": 69.5, "ecx": 30.5}
+{"sr": 10, "scy": 62.0, "scx": 67.25, "er": 17.5, "type": "drag", "ecy": 30.5, "ecx": 40.25}
+{"sr": 10, "scy": 38.0, "scx": 67.25, "er": 17.5, "type": "drag", "ecy": 69.5, "ecx": 40.25}
+{"sr": 10, "scy": 62.0, "scx": 57.5, "er": 17.5, "type": "drag", "ecy": 30.5, "ecx": 50.0}
+{"sr": 10, "scy": 38.0, "scx": 57.5, "er": 17.5, "type": "drag", "ecy": 69.5, "ecx": 50.0}
+{"sr": 10, "scy": 62.0, "scx": 47.75, "er": 17.5, "type": "drag", "ecy": 30.5, "ecx": 59.75}
+{"sr": 10, "scy": 38.0, "scx": 47.75, "er": 17.5, "type": "drag", "ecy": 69.5, "ecx": 59.75}
+{"sr": 10, "scy": 62.0, "scx": 38.0, "er": 17.5, "type": "drag", "ecy": 30.5, "ecx": 69.5}
+{"sr": 10, "scy": 67.25, "scx": 38.0, "er": 17.5, "type": "drag", "ecy": 40.25, "ecx": 69.5}
+{"sr": 10, "scy": 57.5, "scx": 38.0, "er": 17.5, "type": "drag", "ecy": 50.0, "ecx": 69.5}
+{"sr": 10, "scy": 47.75, "scx": 38.0, "er": 17.5, "type": "drag", "ecy": 59.75, "ecx": 69.5}
+{"sr": 10, "scy": 38.0, "scx": 38.0, "er": 17.5, "type": "drag", "ecy": 69.5, "ecx": 69.5}
+
+// Rotation
+// Arguments:
+//      - cx: center x-coordinates of the circular token (in percentage of the viewport width)
+//      - cy: center y-coordinates of the circular token (in percentage of the viewport height)
+//      - r: radius of the circular token (in percentage of the viewport min(width/height))
+//      - angle: initial rotation of the token (in degrees)
+//      - aperture: aperture of the target (in degrees)
+{"angle": -135.0, "cx": 50, "cy": 50, "r": 40, "aperture": 5.0, "type": "rotation"}
+{"angle": -135.0, "cx": 50, "cy": 50, "r": 40, "aperture": 10.0, "type": "rotation"}
+{"angle": -135.0, "cx": 50, "cy": 50, "r": 40, "aperture": 15.0, "type": "rotation"}
+{"angle": -135.0, "cx": 50, "cy": 50, "r": 40, "aperture": 20.0, "type": "rotation"}
+{"angle": -135.0, "cx": 50, "cy": 50, "r": 40, "aperture": 25.0, "type": "rotation"}
+{"angle": -90.0, "cx": 50, "cy": 50, "r": 40, "aperture": 5.0, "type": "rotation"}
+{"angle": -90.0, "cx": 50, "cy": 50, "r": 40, "aperture": 10.0, "type": "rotation"}
+{"angle": -90.0, "cx": 50, "cy": 50, "r": 40, "aperture": 15.0, "type": "rotation"}
+{"angle": -90.0, "cx": 50, "cy": 50, "r": 40, "aperture": 20.0, "type": "rotation"}
+{"angle": -90.0, "cx": 50, "cy": 50, "r": 40, "aperture": 25.0, "type": "rotation"}
+{"angle": -45.0, "cx": 50, "cy": 50, "r": 40, "aperture": 5.0, "type": "rotation"}
+{"angle": -45.0, "cx": 50, "cy": 50, "r": 40, "aperture": 10.0, "type": "rotation"}
+{"angle": -45.0, "cx": 50, "cy": 50, "r": 40, "aperture": 15.0, "type": "rotation"}
+{"angle": -45.0, "cx": 50, "cy": 50, "r": 40, "aperture": 20.0, "type": "rotation"}
+{"angle": -45.0, "cx": 50, "cy": 50, "r": 40, "aperture": 25.0, "type": "rotation"}
+{"angle": 45.0, "cx": 50, "cy": 50, "r": 40, "aperture": 5.0, "type": "rotation"}
+{"angle": 45.0, "cx": 50, "cy": 50, "r": 40, "aperture": 10.0, "type": "rotation"}
+{"angle": 45.0, "cx": 50, "cy": 50, "r": 40, "aperture": 15.0, "type": "rotation"}
+{"angle": 45.0, "cx": 50, "cy": 50, "r": 40, "aperture": 20.0, "type": "rotation"}
+{"angle": 45.0, "cx": 50, "cy": 50, "r": 40, "aperture": 25.0, "type": "rotation"}
+{"angle": 90.0, "cx": 50, "cy": 50, "r": 40, "aperture": 5.0, "type": "rotation"}
+{"angle": 90.0, "cx": 50, "cy": 50, "r": 40, "aperture": 10.0, "type": "rotation"}
+{"angle": 90.0, "cx": 50, "cy": 50, "r": 40, "aperture": 15.0, "type": "rotation"}
+{"angle": 90.0, "cx": 50, "cy": 50, "r": 40, "aperture": 20.0, "type": "rotation"}
+{"angle": 90.0, "cx": 50, "cy": 50, "r": 40, "aperture": 25.0, "type": "rotation"}
+{"angle": 135.0, "cx": 50, "cy": 50, "r": 40, "aperture": 5.0, "type": "rotation"}
+{"angle": 135.0, "cx": 50, "cy": 50, "r": 40, "aperture": 10.0, "type": "rotation"}
+{"angle": 135.0, "cx": 50, "cy": 50, "r": 40, "aperture": 15.0, "type": "rotation"}
+{"angle": 135.0, "cx": 50, "cy": 50, "r": 40, "aperture": 20.0, "type": "rotation"}
+{"angle": 135.0, "cx": 50, "cy": 50, "r": 40, "aperture": 25.0, "type": "rotation"}
+
+// Scaling
+// Arguments:
+//      - cx: center x-coordinates of the circular token (in percentage of the viewport width)
+//      - cy: center y-coordinates of the circular token (in percentage of the viewport height)
+//      - sr: radius of the circular token (in percentage of the viewport min(width/height))
+//      - er: radius of the ring target area (in percentage of the viewport min(width/height))
+//      - thickness: width of the ring (in percentage of the viewport min(width/height))
+{"sr": 24.5, "thickness": 5.0, "cy": 50, "cx": 50, "type": "scaling", "er": 17.5}
+{"sr": 31.5, "thickness": 5.0, "cy": 50, "cx": 50, "type": "scaling", "er": 17.5}
+{"sr": 38.5, "thickness": 5.0, "cy": 50, "cx": 50, "type": "scaling", "er": 17.5}
+{"sr": 45.5, "thickness": 5.0, "cy": 50, "cx": 50, "type": "scaling", "er": 17.5}
+{"sr": 17.5, "thickness": 5.0, "cy": 50, "cx": 50, "type": "scaling", "er": 45.5}
+{"sr": 24.5, "thickness": 5.0, "cy": 50, "cx": 50, "type": "scaling", "er": 45.5}
+{"sr": 31.5, "thickness": 5.0, "cy": 50, "cx": 50, "type": "scaling", "er": 45.5}
+{"sr": 38.5, "thickness": 5.0, "cy": 50, "cx": 50, "type": "scaling", "er": 45.5}
+{"sr": 25.125, "thickness": 7.5, "cy": 50, "cx": 50, "type": "scaling", "er": 18.75}
+{"sr": 31.5, "thickness": 7.5, "cy": 50, "cx": 50, "type": "scaling", "er": 18.75}
+{"sr": 37.875, "thickness": 7.5, "cy": 50, "cx": 50, "type": "scaling", "er": 18.75}
+{"sr": 44.25, "thickness": 7.5, "cy": 50, "cx": 50, "type": "scaling", "er": 18.75}
+{"sr": 18.75, "thickness": 7.5, "cy": 50, "cx": 50, "type": "scaling", "er": 44.25}
+{"sr": 25.125, "thickness": 7.5, "cy": 50, "cx": 50, "type": "scaling", "er": 44.25}
+{"sr": 31.5, "thickness": 7.5, "cy": 50, "cx": 50, "type": "scaling", "er": 44.25}
+{"sr": 37.875, "thickness": 7.5, "cy": 50, "cx": 50, "type": "scaling", "er": 44.25}
+{"sr": 25.75, "thickness": 10.0, "cy": 50, "cx": 50, "type": "scaling", "er": 20.0}
+{"sr": 31.5, "thickness": 10.0, "cy": 50, "cx": 50, "type": "scaling", "er": 20.0}
+{"sr": 37.25, "thickness": 10.0, "cy": 50, "cx": 50, "type": "scaling", "er": 20.0}
+{"sr": 43.0, "thickness": 10.0, "cy": 50, "cx": 50, "type": "scaling", "er": 20.0}
+{"sr": 20.0, "thickness": 10.0, "cy": 50, "cx": 50, "type": "scaling", "er": 43.0}
+{"sr": 25.75, "thickness": 10.0, "cy": 50, "cx": 50, "type": "scaling", "er": 43.0}
+{"sr": 31.5, "thickness": 10.0, "cy": 50, "cx": 50, "type": "scaling", "er": 43.0}
+{"sr": 37.25, "thickness": 10.0, "cy": 50, "cx": 50, "type": "scaling", "er": 43.0}
+{"sr": 31.5, "thickness": 12.5, "cy": 50, "cx": 50, "type": "scaling", "er": 21.25}
+{"sr": 36.625, "thickness": 12.5, "cy": 50, "cx": 50, "type": "scaling", "er": 21.25}
+{"sr": 41.75, "thickness": 12.5, "cy": 50, "cx": 50, "type": "scaling", "er": 21.25}
+{"sr": 21.25, "thickness": 12.5, "cy": 50, "cx": 50, "type": "scaling", "er": 41.75}
+{"sr": 26.375, "thickness": 12.5, "cy": 50, "cx": 50, "type": "scaling", "er": 41.75}
+{"sr": 31.5, "thickness": 12.5, "cy": 50, "cx": 50, "type": "scaling", "er": 41.75}
+
+// Swipe
+// Arguments:
+//      - scx: center x-coordinates of the circular token (in percentage of the viewport width)
+//      - scy: center y-coordinates of the circular token (in percentage of the viewport height)
+//      - r: radius of the circular token (in percentage of the viewport min(width/height))
+//      - ecx: x-coordinates of the end swipe line (in percentage of the viewport width)
+//      - ecy: y-coordinates of the end swipe line (in percentage of the viewport height)
+{"r": 10, "scy": 12.0, "scx": 12.0, "type": "swipe", "ecy": 12.0, "ecx": 50.0}
+{"r": 10, "scy": 12.0, "scx": 12.0, "type": "swipe", "ecy": 12.0, "ecx": 88.0}
+{"r": 10, "scy": 12.0, "scx": 88.0, "type": "swipe", "ecy": 12.0, "ecx": 12.0}
+{"r": 10, "scy": 12.0, "scx": 88.0, "type": "swipe", "ecy": 12.0, "ecx": 50.0}
+{"r": 10, "scy": 50.0, "scx": 12.0, "type": "swipe", "ecy": 50.0, "ecx": 50.0}
+{"r": 10, "scy": 50.0, "scx": 12.0, "type": "swipe", "ecy": 50.0, "ecx": 88.0}
+{"r": 10, "scy": 50.0, "scx": 88.0, "type": "swipe", "ecy": 50.0, "ecx": 12.0}
+{"r": 10, "scy": 50.0, "scx": 88.0, "type": "swipe", "ecy": 50.0, "ecx": 50.0}
+{"r": 10, "scy": 88.0, "scx": 12.0, "type": "swipe", "ecy": 88.0, "ecx": 50.0}
+{"r": 10, "scy": 88.0, "scx": 12.0, "type": "swipe", "ecy": 88.0, "ecx": 88.0}
+{"r": 10, "scy": 88.0, "scx": 88.0, "type": "swipe", "ecy": 88.0, "ecx": 12.0}
+{"r": 10, "scy": 88.0, "scx": 88.0, "type": "swipe", "ecy": 88.0, "ecx": 50.0}
+{"r": 10, "scy": 12.0, "scx": 12.0, "type": "swipe", "ecy": 50.0, "ecx": 12.0}
+{"r": 10, "scy": 12.0, "scx": 12.0, "type": "swipe", "ecy": 88.0, "ecx": 12.0}
+{"r": 10, "scy": 88.0, "scx": 12.0, "type": "swipe", "ecy": 12.0, "ecx": 12.0}
+{"r": 10, "scy": 88.0, "scx": 12.0, "type": "swipe", "ecy": 50.0, "ecx": 12.0}
+{"r": 10, "scy": 12.0, "scx": 50.0, "type": "swipe", "ecy": 50.0, "ecx": 50.0}
+{"r": 10, "scy": 12.0, "scx": 50.0, "type": "swipe", "ecy": 88.0, "ecx": 50.0}
+{"r": 10, "scy": 88.0, "scx": 50.0, "type": "swipe", "ecy": 12.0, "ecx": 50.0}
+{"r": 10, "scy": 88.0, "scx": 50.0, "type": "swipe", "ecy": 50.0, "ecx": 50.0}
+{"r": 10, "scy": 12.0, "scx": 88.0, "type": "swipe", "ecy": 50.0, "ecx": 88.0}
+{"r": 10, "scy": 12.0, "scx": 88.0, "type": "swipe", "ecy": 88.0, "ecx": 88.0}
+{"r": 10, "scy": 88.0, "scx": 88.0, "type": "swipe", "ecy": 12.0, "ecx": 88.0}
+{"r": 10, "scy": 88.0, "scx": 88.0, "type": "swipe", "ecy": 50.0, "ecx": 88.0}
+

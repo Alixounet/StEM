@@ -1,0 +1,856 @@
+/* stylesheet.css
+ * StEM: Storyboard-Based Empirical
+ *       Modeling of Touch Interface
+ *       Performance
+ *
+ * 2017-02-01
+ *
+ * Code by: Alix Goguey, www.alixgoguey.fr
+ *
+ * Project Authors: Alix Goguey, Gery Casiez, Andy Cockburn and Carl Gutwin
+ *                  http://ns.inria.fr/mjolnir/StEM
+ *
+ * License: GNU General Public License v3.0
+ *   See https://github.com/Alixounet/StEM/blob/master/LICENSE
+ */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Grande', 'Verdana', 'Helvetica', sans-serif;
+    font-size: 10pt;
+
+    background-color: steelblue;
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: underline overline;
+    font-weight: bold;
+    color: black;
+}
+
+/***************************************/
+/***************************************/
+@media all and (orientation:portrait) {
+    .share {
+        position: absolute;
+        bottom: 1%;
+        width: 20%;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+    }
+}
+
+@media all and (orientation:landscape) {
+    .share {
+        position: absolute;
+        bottom: 1%;
+        width: 20%;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: 0.5%;
+        padding-top: 0.5%;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+    }
+}
+
+#facebook {
+    left: 10%;
+    background-color: #3b5997;
+    border-left: 2px solid #3b5997;
+    border-top: 2px solid #3b5997;
+    border-right: 2px solid #263960;
+    border-bottom: 2px solid #263960;
+}
+
+#twitter {
+    right: 10%;
+    background-color: #41b7d8;
+    border-left: 2px solid #41b7d8;
+    border-top: 2px solid #41b7d8;
+    border-right: 2px solid #238caa;
+    border-bottom: 2px solid #238caa;
+}
+
+/***************************************/
+/***************************************/
+@media all and (orientation:portrait) {
+    .button_agr {
+        position: absolute;
+        bottom: 15%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        left: 20%;
+        right: 20%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 15px;
+    }
+
+    .button_noagr {
+        position: absolute;
+        bottom: 2%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        left: 20%;
+        right: 20%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 15px;
+    }
+
+    .button_training {
+        position: absolute;
+        top: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        left: 20%;
+        right: 20%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 15px;
+    }
+
+    .button_finish {
+        position: absolute;
+        top: auto;
+        bottom: 1%;
+        left: 40%;
+        right: 40%;
+        padding-bottom: 2%;
+        padding-top: 2%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 15px;
+    }
+
+    .button {
+        position: absolute;
+        bottom: 10%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        left: 20%;
+        right: 20%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 15px;
+    }
+
+    .but_inactive {
+        background-color: #797F8B;
+
+        border-left: 2px solid #6F737C;
+        border-top: 2px solid #6F737C;
+        border-right: 2px solid #39465E;
+        border-bottom: 2px solid #39465E;
+    }
+
+    .but_active {
+        background-color: #39465E;
+
+        border-left: 2px solid #39465E;
+        border-top: 2px solid #39465E;
+        border-right: 2px solid #39465E;
+        border-bottom: 2px solid #39465E;
+    }
+}
+
+@media all and (orientation:landscape) {
+    .button_agr {
+        position: absolute;
+        bottom: 20%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        left: 60%;
+        right: 10%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 15px;
+    }
+
+    .button_noagr {
+        position: absolute;
+        bottom: 2%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        left: 60%;
+        right: 10%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 15px;
+    }
+
+    .button_training {
+        position: absolute;
+        bottom: 10%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        left: 2%;
+        right: 68%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 15px;
+    }
+
+    .button_finish {
+        position: absolute;
+        bottom: 10%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        right: 35%;
+        left: 35%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 15px;
+    }
+
+    .button {
+        position: absolute;
+        bottom: 10%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        right: 2%;
+        left: 68%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 15px;
+    }
+
+    .but_inactive {
+        background-color: #797F8B;
+
+        border-left: 2px solid #6F737C;
+        border-top: 2px solid #6F737C;
+        border-right: 2px solid #39465E;
+        border-bottom: 2px solid #39465E;
+    }
+
+    .but_active {
+        background-color: #39465E;
+
+        border-left: 2px solid #39465E;
+        border-top: 2px solid #39465E;
+        border-right: 2px solid #39465E;
+        border-bottom: 2px solid #39465E;
+    }
+}
+
+@media all and (min-aspect-ratio: 6/10) and (max-aspect-ratio: 1/1) {
+    .button_agr {
+        position: absolute;
+        bottom: 1%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        left: 2%;
+        right: 51%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 15px;
+    }
+
+    .button_noagr {
+        position: absolute;
+        bottom: 1%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        left: 51%;
+        right: 2%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 15px;
+    }
+
+    .button_training {
+        position: absolute;
+        top: auto;
+        bottom: 10%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        left: 2%;
+        right: 51%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 15px;
+    }
+
+    .button_finish {
+        position: absolute;
+        top: auto;
+        bottom: 1%;
+        left: 40%;
+        right: 40%;
+        padding-bottom: 2%;
+        padding-top: 2%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 15px;
+    }
+
+    .button {
+        position: absolute;
+        bottom: 10%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        left: 51%;
+        right: 2%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 15px;
+    }
+}
+
+/***************************************/
+/***************************************/
+@media all and (orientation:portrait) {
+    #infos {
+        position: absolute;
+        left: 7%;
+        top: 0%;
+        width: 86%;
+        height: 55%;
+        text-align: justify;
+    }
+
+    #previnfos {
+        position: absolute;
+        top: 11%;
+        left: 1%;
+        width: 5%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #39465E;
+    }
+
+    #nextinfos {
+        position: absolute;
+        top: 11%;
+        right: 1%;
+        width: 5%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #39465E;
+    }
+
+    #demographics {
+        position: absolute;
+        bottom: 29%;
+        left: 1%;
+        width: 98%;
+
+        text-align: center;
+
+        display: inline-block;
+    }
+}
+
+@media all and (orientation:landscape) {
+    #infos {
+        position: absolute;
+        left: 7%;
+        top: 0%;
+        width: 36%;
+        height: 55%;
+        text-align: justify;
+    }
+
+    #previnfos {
+        position: absolute;
+        top: 11%;
+        left: 1%;
+        width: 5%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #39465E;
+    }
+
+    #nextinfos {
+        position: absolute;
+        top: 11%;
+        right: 51%;
+        width: 5%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+
+        color: black;
+        text-align: center;
+
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #39465E;
+    }
+
+    #demographics {
+        position: absolute;
+        top: 2%;
+        right: 0%;
+        width: 50%;
+
+        text-align: center;
+
+        display: inline-block;
+    }
+}
+@media all and (min-aspect-ratio: 6/10) and (max-aspect-ratio: 1/1) {
+    #demographics {
+        position: absolute;
+        bottom: 15%;
+        left: 5%;
+        width: 98%;
+
+        text-align: center;
+
+        display: inline-block;
+    }
+}
+
+#disclaimer {
+}
+
+
+
+.unchecked {
+    background: #797F8B;
+}
+
+.checked {
+    background: #39465E;
+}
+
+.demo_category {
+    /*background-color: black;*/
+    /*display: inline;*/
+    text-align: left;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: transparent;
+    border-radius: 3px;
+}
+
+.ko {
+    border-style: solid;
+    border-width: 3px;
+    border-color: brown;
+    border-radius: 3px;
+}
+
+.demo_label {
+    display: inline-block;
+    /*background: white;*/
+    min-width: 40%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-right: 1%;
+
+    text-align: right;
+}
+
+.demo_button {
+    display: inline-block;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+
+    text-align: center;
+
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #39465E;
+}
+
+/*.demo_input {
+    display: inline-block;
+    background: white;
+    min-width: 10%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+
+    text-align: center;
+}*/
+
+.demo_input {
+    display: inline-block;
+    background: white;
+    /*min-width: 10%;*/
+    width: 10%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+
+    text-align: center;
+}
+
+@media all and (orientation:portrait) {
+    .demo_input {
+        font-size: 3vw;
+    }
+}
+@media all and (orientation:landscape) {
+    .demo_input {
+        font-size: 3vh;
+    }
+}
+
+#device_value {
+    /*min-width: 20%;*/
+    width: 30%;
+}
+
+#smallinstruction {
+    position: absolute;
+    left: 35%;
+    top: 1%;
+    width: 30%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+}
+
+#instructions, #motivations {
+    position: absolute;
+    left: 14%;
+    width: 68%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    text-align: justify;
+}
+
+#instructions {
+    top: 60%;
+}
+
+/***************************************/
+/***************************************/
+@media all and (orientation:portrait) {
+    #motivations {
+        top: 25%;
+    }
+}
+@media all and (orientation:landscape) {
+    #motivations {
+        top: 1%;
+    }
+}
+@media all and (min-aspect-ratio: 6/10) and (max-aspect-ratio: 1/1) {
+    #motivations {
+        top: 1%;
+    }
+}
+
+#grips {
+    position: absolute;
+    left: 1%;
+    width: 98%;
+
+    text-align: center;
+
+    display: inline-block;
+}
+
+@media all and (orientation:portrait) {
+    #grips {
+        bottom: 25%;
+    }
+}
+@media all and (orientation:landscape) {
+    #grips {
+        bottom: 30%;
+    }
+}
+
+#grip11, #grip21, #grip22 {
+    width: 25%;
+}
+
+@media all and (orientation:landscape) {
+    #svggrip11, #svggrip21, #svggrip22 {
+        max-height: 10%;
+        max-height: 10vh;
+    }
+}
+
+/***************************************/
+/***************************************/
+@media all and (orientation:portrait) {
+    .button, .button_training, .button_finish, .button_agr, .button_noagr {
+        font-size: 4vw;
+    }
+    #nextinfos, #previnfos, .eligibility {
+        font-size: 2vw;
+    }
+    #infos, #demographics, #instructions, #smallinstruction, #motivations, .share, #grips {
+        font-size: 3vw;
+    }
+}
+@media all and (orientation:landscape) {
+    .button, .button_training, .button_finish, .button_agr, .button_noagr {
+        font-size: 4vh;
+    }
+    #nextinfos, #previnfos, .eligibility {
+        font-size: 2vh;
+    }
+    #infos, #demographics, #instructions, #smallinstruction, #motivations, .share, #grips {
+        font-size: 3vh;
+    }
+}
+@media all and (min-aspect-ratio: 6/10) and (max-aspect-ratio: 1/1) {
+    .button, .button_training, .button_finish, .button_agr, .button_noagr {
+        font-size: 3vw;
+    }
+    #nextinfos, #previnfos, .eligibility {
+        font-size: 2vw;
+    }
+    #infos, #demographics, #instructions, #smallinstruction, #motivations, .share, #grips {
+        font-size: 3vw;
+    }
+}
+
+#task {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+#tap {
+    position: absolute;
+    border-radius: 50%;
+}
+
+#pointing_start {
+    position: absolute;
+    border-radius: 50%;
+}
+
+#pointing_end {
+    position: absolute;
+    border-radius: 50%;
+}
+
+#drag_start {
+    position: absolute;
+    border-radius: 50%;
+}
+
+#drag_end {
+    position: absolute;
+    border-radius: 50%;
+}
+
+#rotation {
+    position: absolute;
+    border-radius: 50%;
+}
+
+#lower_scaling, #upper_scaling {
+    position: absolute;
+    border-radius: 50%;
+}
+
+#tick {
+    position: absolute;
+}
+
+#l_aperture, #r_aperture {
+    position: absolute;
+}
+
+#swipe_start {
+    position: absolute;
+    border-radius: 50%;
+}
+
+#swipe_line {
+    position: absolute;
+}
+
+.active {
+    background: white;
+    border-style: solid;
+    border-color: brown;
+}
+
+.inactive {
+    background: grey;
+    border-style: solid;
+    border-color: black;
+}
+
+.move_inactive {
+    background: #144F26;
+    border-style: solid;
+    border-color: black;
+}
+
+.movable {
+    background: #FFAA20;
+    border-style: solid;
+    border-color: black;
+}
+
+.line {
+    transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -webkit-transform-origin: 0% 50%;
+}
+
+.linetick_inactive {
+    background: #000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #FFAA20 75%, #000 80%, #000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #FFAA20 75%, #000 80%, #000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #FFAA20 75%, #000 80%, #000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #FFAA20 75%, #000 80%, #000); /* Standard syntax (must be last) */
+}
+
+.lineaperture_inactive {
+    background: #000; /* For browsers that do not support gradients */
+    background: brown; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #FFAA20 75%, brown 80%, brown); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #FFAA20 75%, brown 80%, brown); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #FFAA20 75%, brown 80%, brown); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #FFAA20 75%, brown 80%, brown); /* Standard syntax (must be last) */
+}
+
+.linetick_active {
+    background: #000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, white 75%, #000 80%, #000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, white 75%, #000 80%, #000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, white 75%, #000 80%, #000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, white 75%, #000 80%, #000); /* Standard syntax (must be last) */
+}
+
+.lineaperture_active {
+    background: #000; /* For browsers that do not support gradients */
+    background: brown; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, white 75%, brown 80%, brown); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, white 75%, brown 80%, brown); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, white 75%, brown 80%, brown); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, white 75%, brown 80%, brown); /* Standard syntax (must be last) */
+}
+
+.ring {
+    position: absolute;
+    border-radius: 50%;
+    background-color: transparent;
+    border-style: solid;
+}
+
+.ring_outer_inactive {
+    border-color: black;
+}
+
+.ring_outer_active {
+    border-color: brown;
+}
+
+.ring_inner_inactive {
+    border-color: #144F26;
+}
+
+.ring_inner_active {
+    border-color: white;
+}
+
+.upper_inactive {
+    background-color: transparent;
+    border-style: solid;
+    border-color: black;
+}
+
+.upper_active {
+    background-color: transparent;
+    border-style: solid;
+    border-color: brown;
+}
+
+#swipe_line {
+    background: #000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #000 45%, #144F26 55%, #144F26); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #000 45%, #144F26 55%, #144F26); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #000 45%, #144F26 55%, #144F26); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #000 45%, #144F26 55%, #144F26); /* Standard syntax (must be last) */
+}
+
+#cat {
+   display: block;
+   /*max-width: 70%;
+   max-height: 50%;*/
+   width: 80%;
+   height: auto;
+}

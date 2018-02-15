@@ -1,0 +1,322 @@
+<!--/
+ * index.html
+ * StEM: Storyboard-Based Empirical
+ *       Modeling of Touch Interface
+ *       Performance
+ *
+ * 2017-02-01
+ *
+ * Code by: Alix Goguey, www.alixgoguey.fr
+ *
+ * Project Authors: Alix Goguey, Gery Casiez, Andy Cockburn and Carl Gutwin
+ *                  http://ns.inria.fr/mjolnir/StEM
+ *
+ * License: GNU General Public License v3.0
+ *   See https://github.com/Alixounet/StEM/blob/master/LICENSE
+ *
+-->
+
+<!DOCTYPE html>
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <title>USASK Touch Tool</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+    <script type="text/javascript" src="js/client.js"></script>
+
+    <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
+    <script src="http://d3js.org/d3.v3.js"></script>
+</head>
+<body id="main">
+
+    <div id="screen">
+        <div id="actions">
+            <div id="actions_tick">drag into timeline</div>
+            <div id="button" class="card"><div class="circle_square"></div><div class="card_name">Buttons</div></div>
+            <div id="button_square" class="card"><div class="square"></div><div class="card_name">Square</div></div>
+            <div id="button_circle" class="card"><div class="circle"></div><div class="card_name">Circular</div></div>
+            <div id="multiplier" class="card multiplier_card">
+                <div class="circle_square"></div>
+                <div class="card_name">
+                    Additional press<br>
+                    <div id="div_multiplier" class="div_spinner" multval="1">
+                        <input class="spinner multiplier_spinner">
+                    </div>
+                </div>
+            </div>
+            <div id="token" class="card"><div class="circle_square"></div><div class="card_name">Draggable objects</div></div>
+            <div id="token_square" class="card"><div class="square"></div><div class="card_name">Square</div></div>
+            <div id="token_circle" class="card"><div class="circle"></div><div class="card_name">Circular</div></div>
+            <div id="drop" class="card"><div class="circle_square"></div><div class="card_name">Drop areas</div></div>
+            <div id="drop_square" class="card"><div class="square"></div><div class="card_name">Square</div></div>
+            <div id="drop_circle" class="card"><div class="circle"></div><div class="card_name">Circular</div></div>
+
+            <div id="gestures" class="card">
+                <div class="arrow arrow_up"></div>
+                <div class="arrow arrow_down"></div>
+                <div class="arrow arrow_right"></div>
+                <div class="arrow arrow_left"></div>
+                <div class="card_name">Gestures</div>
+            </div>
+            <div id="rotation" class="card angle_card">
+                <div class="clock_outer"></div>
+                <div class="clock_square"></div>
+                <div class="clock_inner"></div>
+                <div class="clock_arrow"></div>
+                <div class="card_name">Rotation in deg
+                    <div id="div_angle" class="div_spinner" degval="90">
+                        <input class="spinner angle_spinner">
+                    </div>
+                </div>
+            </div>
+            <div id="scaling" class="card ratio_card">
+                <div class="clock_outer"></div>
+                <div class="clock_inner"></div>
+                <div class="card_name">Scaling in mm;
+                    <div id="div_ratio" class="div_spinner" ratioval="20">
+                        <input class="spinner ratio_spinner">
+                    </div>
+                </div>
+            </div>
+            <div id="swipe" class="card">
+                <div class="arrow arrow_up"></div>
+                <div class="arrow arrow_down"></div>
+                <div class="arrow arrow_right"></div>
+                <div class="arrow arrow_left"></div>
+                <div class="card_name">Flick/Swipe</div>
+            </div>
+            <div id="timers" class="card">
+                <div class="clock_outer"></div>
+                <div class="clock_square"></div>
+                <div class="clock_inner">:</div>
+                <div class="clock_arrow"></div>
+                <div class="card_name">Timers</div>
+            </div>
+            <div id="dwell" class="card">
+                <div class="clock_outer"></div>
+                <div class="clock_square"></div>
+                <div class="clock_inner">l</div>
+                <div class="clock_arrow"></div>
+                <div class="card_name">Long-press</div>
+            </div>
+            <div id="timeout" class="card timeout_card">
+                <div class="clock_outer"></div>
+                <div class="clock_square"></div>
+                <div class="clock_inner">t</div>
+                <div class="clock_arrow"></div>
+                <div class="card_name">
+                    Timeout in ms<br>
+                    <div id="div_timeout" class="div_spinner" msval="1000">
+                        <input class="spinner timeout_spinner">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="timeline" class="list_container"></div>
+        <div id="interface_phone">
+            <div class="phone_top"></div>
+            <div id="interface" class="phone_screen"></div>
+            <div class="phone_bottom"></div>
+            <div class="phone_button"></div>
+        </div>
+        <div class="title">Screen</div>
+        <div class="format_input">
+            <label for="screen_name">Screen name:</label>
+            <input type="text" id="screen_name" value="">
+            <button id="up_backgrnd" class="ui-button ui-widget ui-corner-all top_input">Background</button>
+            <input type='file' id="hidden_up_backgrnd"/>
+            <!-- Dwell time:&nbsp;<input id="dwell_time" class="spinner">&nbsp;ms -->
+            <div id="sequence_name"></div>
+        </div>
+        <div id="actions_canvas"></div>
+        <div id="actions_seq"></div>
+        <div class="format_input format_button">
+            <button id="screen_undo" class="ui-button ui-widget ui-corner-all button_hist">Undo</button>
+            <button id="screen_redo" class="ui-button ui-widget ui-corner-all button_hist">Redo</button>
+            <button id="screen_save" class="ui-button ui-widget ui-corner-all button_hist">Save</button>
+            <button id="screen_load" class="ui-button ui-widget ui-corner-all button_hist">Load</button>
+            <input type='file' id="hidden_screen_load"/>
+        </div>
+    </div>
+
+    <div id="scenario">
+        <img id="scenario_icon" src="img/scenario.png">
+        <div class="guard"></div>
+        <div id="screens" class="list_container">
+            <div id="scenario_but" class="format_life format_button">
+                <button id="scenario_add" class="ui-button ui-widget ui-corner-all button_life">Add</button>
+                <button id="scenario_clone" class="ui-button ui-widget ui-corner-all button_life">Clone</button>
+                <button id="scenario_delete" class="ui-button ui-widget ui-corner-all button_life">Delete</button>
+            </div>
+        </div>
+        <div class="title">Scenario</div>
+        <div class="format_input">
+            <label for="scenario_name">Scenario name:</label>
+            <input type="text" id="scenario_name" value="">
+        </div>
+        <div class="format_input">
+            Width:&nbsp;&nbsp;<input id="phone_width" class="spinner">&nbsp;mm<br>
+            Height:&nbsp;<input id="phone_height" class="spinner">&nbsp;mm
+        </div>
+        <div id="phone">
+            <div class="phone_top"></div>
+            <div class="phone_screen"></div>
+            <div class="phone_bottom"></div>
+            <div class="phone_button"></div>
+        </div>
+        <div class="format_input format_button">
+            <button id="scenario_undo" class="ui-button ui-widget ui-corner-all button_hist">Undo</button>
+            <button id="scenario_redo" class="ui-button ui-widget ui-corner-all button_hist">Redo</button>
+            <button id="scenario_save" class="ui-button ui-widget ui-corner-all button_hist">Save</button>
+            <button id="scenario_load" class="ui-button ui-widget ui-corner-all button_hist">Load</button>
+            <input type='file' id="hidden_scenario_load"/>
+        </div>
+    </div>
+
+    <div id="workspace">
+        <img id="workspace_icon" src="img/work.png">
+        <div class="guard"></div>
+        <div id="scenarios" class="list_container">
+            <div id="workspace_but" class="format_life format_button">
+                <button id="workspace_add" class="ui-button ui-widget ui-corner-all button_life">Add</button>
+                <button id="workspace_clone" class="ui-button ui-widget ui-corner-all button_life">Clone</button>
+                <button id="workspace_delete" class="ui-button ui-widget ui-corner-all button_life">Delete</button>
+            </div>
+        </div>
+        <div class="title">Workspace</div>
+        <div class="format_input format_button">
+            <button id="workspace_undo" class="ui-button ui-widget ui-corner-all button_hist">Undo</button>
+            <button id="workspace_redo" class="ui-button ui-widget ui-corner-all button_hist">Redo</button>
+            <button id="workspace_save" class="ui-button ui-widget ui-corner-all button_hist">Save</button>
+            <button id="workspace_load" class="ui-button ui-widget ui-corner-all button_hist">Load</button>
+            <input type='file' id="hidden_workspace_load"/>
+        </div>
+    </div>
+
+    <div id="graphs">
+        <img id="graphs_icon" src="img/graph.png">
+        <svg id="stacked_bar">
+            <div id="tooltip" class="hidden">
+                <span id="value"></span>
+            </div>
+        </svg>
+        <svg id="user_stacked_bar">
+            <div id="tooltip_user" class="hidden">
+                <span id="value"></span>
+            </div>
+        </svg>
+        <svg id="distribution">
+            <div id="tooltip_distrib" class="hidden">
+                <span id="value"></span>
+            </div>
+        </svg>
+    </div>
+
+    <div id="computation">
+        <img id="computation_icon" src="img/computation.png">
+        <div id="quick_crunch">quick <img class="crunch_icon" src="img/crunch.png"> crunch</div>
+        <div class="title"> Computation options</div><br>
+        <div class="label">Aggregation method:</div>
+        <div class="options">
+            <input type="radio" name="agg_type" id="radio_agg_Median" checked="checked">Median</input>
+            <input type="radio" name="agg_type" id="radio_agg_Mean">Mean</input>
+        </div>
+        <div class="label">Orientation:</div>
+        <div class="options">
+            <input type="radio" name="orientation_type" id="radio_orientation_All" checked="checked">All</input>
+            <input type="radio" name="orientation_type" id="radio_orientation_Current">Current</input>
+        </div>
+        <div class="label">Diagonal:</div>
+        <div class="options">
+            <input type="radio" name="diagonal_type" id="radio_diagonal_All" checked="checked">All</input>
+            <input type="radio" name="diagonal_type" id="radio_diagonal_Current">Current</input>
+        </div>
+        <div class="label">Grip:</div>
+        <div class="options">
+            <input type="radio" name="grip_type" id="radio_grip_All" checked="checked">All</input>
+            <input type="radio" name="grip_type" id="radio_grip_Grip11">
+                <img class="grip_icon" src="img/grip11.png">
+            </input>
+            <input type="radio" name="grip_type" id="radio_grip_Grip21">
+                <img class="grip_icon" src="img/grip21.png">
+            </input>
+            <input type="radio" name="grip_type" id="radio_grip_Grip22">
+                <img class="grip_icon" src="img/grip22.png">
+            </input>
+        </div>
+        <div class="label">Gender:</div>
+        <div class="options">
+            <input type="radio" name="gender_type" id="radio_gender_All" checked="checked">All</input>
+            <input type="radio" name="gender_type" id="radio_gender_Female">Female</input>
+            <input type="radio" name="gender_type" id="radio_gender_Male">Male</input>
+        </div>
+        <div class="label">Fastest users<br>threshold (in %):</div>
+        <div class="options">
+            <input id="expert" value="10" class="spinner prop_input" name="expert-spinner">
+        </div>
+        <div class="label">Slowest users<br>threshold (in %):</div>
+        <div class="options">
+            <input id="novice" value="10" class="spinner prop_input" name="novice-spinner">
+        </div>
+        <div id="warning"></div>
+        <button id="compute" class="ui-button ui-widget ui-corner-all">Crunch <img class="crunch_icon" src="img/crunch.png"> numbers!</button>
+    </div>
+
+    <div id="help">
+        <img id="help_icon" src="img/question.png">
+        <div class="title"> Axioms</div>
+        <ul id="axioms">
+            <li>T (tapping):
+                Pressing an on-screen target without knowledge of the previous finger position on the screen.</li>
+            <li>P (pointing):
+                Pressing an on-screen target with knowledge of the previous finger position on the screen</li>
+            <li>D (dragging):
+                Moving an on-screen object inside a designated area</li>
+            <li>R (rotation):
+                Rotating an on-screen object using two fingers</li>
+            <li>S (scaling):
+                Resizing an on-screen object using two fingers</li>
+            <li>F (flicking):
+                Sudden linear movement in one of the cardinal directions</li>
+            <li>S (swiping):
+                Linear movement in one of the cardinal directions</li>
+            <li>&#9679; (long-press):
+                Timeout involved when performing a long-press on a touch screen (typically 300 ms).</li>
+            <li>W (waiting):
+                Timeout that can be specified by the user.</li>
+        </ul>
+        <div class="title"> Grips</div>
+        <ul id="axioms">
+            <li><img class="grip_help" src="img/grip11.png">
+                &nbsp;&nbsp;The same hand grips and interacts.</li>
+            <li><img class="grip_help" src="img/grip21.png">
+                &nbsp;&nbsp;One hand grips and the other interacts.</li>
+            <li><img class="grip_help" src="img/grip22.png">
+                &nbsp;&nbsp;Both hand interact.</li>
+        </ul>
+        <!-- <div class="title"> Model used</div>
+        <ul id="axioms">
+            <li>T (tapping): a + b.log2(1 + Screen diagonal / Target diameter)</li>
+            <li>P (pointing): a + b.log2(1 + Distance / Target diameter)</li>
+            <li>D (dragging): a + b.log2(1 + Distance / Diameter differences)</li>
+            <li>F (flicking): Mean or Median</li>
+        </ul> -->
+        <div class="title"> Spinners</div>
+        <ul id="axioms">
+            <li>Additional press: after a button was placed, each additional press corresponds to a new button press</li>
+            <li>Rotation in deg: angle in degrees of the rotation gesture</li>
+            <li>Scaling in mm: distance travelled by each finger while performing a scaling gesture</li>
+            <li>Timeout in ms: delay in millisecond (eg. to modelled web page loading)</li>
+        </ul>
+    </div>
+
+    <div id="general_error">
+    </div>
+</body>
+</html>
