@@ -106,7 +106,7 @@ function set_workspace() {
     });
 
     document.getElementById("workspace_undo").addEventListener("click", function(evt) {
-        gvar.socket.emit('crashtest', {});
+        gvar.socket.emit('crashtest', null);
         // gvar.clean_views();
         // gvar.undo();
         // gvar.update_views();
