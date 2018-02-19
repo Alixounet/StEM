@@ -20,6 +20,7 @@ var simstats = require('simple-statistics');
 var fs = require('fs');
 var PythonShell = require('python-shell');
 
+
 var pool      =    mysql.createPool({
     connectionLimit : 100, //important
     multipleStatements: true,
@@ -83,6 +84,10 @@ io.sockets.on('connection', function (socket) {
 
     var current_crunch = -1;
     var results = {};
+
+    socket.on('crunch_workspace', function(data) {
+        asd;
+    });
 
     function emit_results(cur_crunch) {
         if (cur_crunch == current_crunch) {
