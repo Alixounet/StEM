@@ -19,7 +19,7 @@ var mysql    =  require('mysql');
 
 var ConfigParser = require('configparser');
 var config = new ConfigParser();
-config.read('config/config.cfg');
+config.read('config.cfg');
 
 var pool      =    mysql.createPool({
     connectionLimit : 100, //important
