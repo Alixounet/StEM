@@ -85,10 +85,10 @@ io.sockets.on('connection', function (socket) {
     var current_crunch = -1;
     var results = {};
 
-    socket.on('crashtest', function(data) {
-        console.log(data);
-        console.log(data["filters"]);
-    });
+    // socket.on('crashtest', function(data) {
+    //     console.log(data);
+    //     console.log(data["dumy"]);
+    // });
 
     function emit_results(cur_crunch) {
         if (cur_crunch == current_crunch) {
