@@ -17,14 +17,18 @@
 var express  =  require("express");
 var mysql    =  require('mysql');
 
+var ConfigParser = require('configparser');
+var config = new ConfigParser();
+config.read('config/config.cfg');
+
 var pool      =    mysql.createPool({
     connectionLimit : 100, //important
     multipleStatements: true,
     host     : 'localhost',
     port     :  3306,
-    user     : 'fitts',
-    password : 'fitts',
-    database : 'fitts',
+    user     : config.get('DB', 'user'),
+    password : config.get('DB', 'password'),
+    database : config.get('DB', 'database'),
     debug    :  false
 });
 
