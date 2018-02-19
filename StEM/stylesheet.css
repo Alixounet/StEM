@@ -39,9 +39,9 @@ html, body {
 }
 
 a {
-    text-decoration: underline overline;
+    text-decoration: underline;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 
 .format_button {
