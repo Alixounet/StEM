@@ -87,7 +87,7 @@ io.sockets.on('connection', function (socket) {
 
     socket.on('crashtest', function(data) {
         console.log(data);
-        console.log(data["filters"];)
+        console.log(data["filters"]);
     });
 
     function emit_results(cur_crunch) {
