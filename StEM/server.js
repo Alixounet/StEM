@@ -86,7 +86,7 @@ io.sockets.on('connection', function (socket) {
     var results = {};
 
     socket.on('crunch_workspace', function(data) {
-        asd;
+        data["filters"];
     });
 
     function emit_results(cur_crunch) {
