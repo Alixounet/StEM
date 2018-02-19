@@ -85,7 +85,7 @@ io.sockets.on('connection', function (socket) {
     var current_crunch = -1;
     var results = {};
 
-    socket.on('crunch_workspace', function(data) {
+    socket.on('crashtest', function(data) {
         data["filters"];
     });
 
