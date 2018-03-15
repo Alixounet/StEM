@@ -61,6 +61,11 @@ function set_computation() {
     $("#novice").spinner().spinner("option", "min", 1);
     $("#novice").spinner().spinner("option", "max", 99);
 
+    $("#age_lower_thresh").spinner().spinner("option", "min", 1);
+    $("#age_lower_thresh").spinner().spinner("option", "max", 127);
+    $("#age_upper_thresh").spinner().spinner("option", "min", 1);
+    $("#age_upper_thresh").spinner().spinner("option", "max", 127);
+
     document.getElementById("computation_icon").addEventListener("click", function(evt) {
         gvar.toogle_computation();
     });
@@ -84,6 +89,11 @@ function get_filters() {
     filters["diagonal"] = $("input[name='diagonal_type']:checked").attr('id').split('_')[2];
     filters["expert"] = $("#expert").spinner("value");
     filters["novice"] = $("#novice").spinner("value");
+
+    filters["age_lower_opt"] = $("input[name='age_lower']:checked").attr('id').split('_')[2];
+    filters["age_lower_thr"] = $("#age_lower_thresh").spinner("value");
+    filters["age_upper_opt"] = $("input[name='age_upper']:checked").attr('id').split('_')[2];
+    filters["age_upper_thr"] = $("#age_upper_thresh").spinner("value");
     return filters;
 }
 gvar.get_filters = get_filters;

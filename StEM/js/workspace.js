@@ -121,7 +121,7 @@ function set_workspace() {
         // window.open('data:text/plain;charset=utf-8,' + escape(JSON.stringify(to_save)));
 
         var blob = new Blob([escape(JSON.stringify(to_save))], { type: 'text/plain;charset=utf-8' });
-        saveAs(blob, "workspace.txt");
+        saveAs(blob, "workspace.sws");
 
         gvar.update_views();
     });

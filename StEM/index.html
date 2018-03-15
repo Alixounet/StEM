@@ -257,6 +257,18 @@
             <input type="radio" name="gender_type" id="radio_gender_Female">Female</input>
             <input type="radio" name="gender_type" id="radio_gender_Male">Male</input>
         </div>
+        <div class="label">Age (lower boundary):</div>
+        <div class="options">
+            <input type="radio" name="age_lower" id="age_lower_All" checked="checked">All</input>
+            <input type="radio" name="age_lower" id="age_lower_le">&ge;</input>
+            <input id="age_lower_thresh" value="18" class="spinner prop_input" name="age_lower-spinner">
+        </div>
+        <div class="label">Age (upper boundary):</div>
+        <div class="options">
+            <input type="radio" name="age_upper" id="age_upper_All" checked="checked">All</input>
+            <input type="radio" name="age_upper" id="age_upper_ge">&le;</input>
+            <input id="age_upper_thresh" value="76" class="spinner prop_input" name="age_upper-spinner">
+        </div>
         <div class="label">Fastest users<br>threshold (in %):</div>
         <div class="options">
             <input id="expert" value="10" class="spinner prop_input" name="expert-spinner">

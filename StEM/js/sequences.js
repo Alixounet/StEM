@@ -98,7 +98,7 @@ function add_drag(act,last_token_act,last_act,sc) {
 
     axiom["orientation"] = (sc["width"]<=sc["height"]?"Portrait":"Landscape");
     axiom["diagonal"] = Math.round(scr_diag/25.4 * 2) / 2;
-    console.log(axiom["diagonal"])
+
     return axiom;
 } gvar.add_drag = add_drag;
 

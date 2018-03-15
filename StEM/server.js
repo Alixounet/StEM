@@ -353,8 +353,10 @@ io.sockets.on('connection', function (socket) {
         var cond_grip        = (filters["grip"]=="All"?"":"AND "+table+".`Grip` = '"+filters["grip"]+"'\n");
         var cond_diagonal    = (filters["diagonal"]=="All"?"":"AND D.`Diagonal` = "+axiom["diagonal"]+"\n");
         var cond_gender      = (filters["gender"]=="All"?"":"AND U.`Gender` = '"+filters["gender"]+"'\n");
+        var cond_age_lower   = (filters["age_lower_opt"]=="All"?"":"AND U.`Age` >= '"+filters["age_lower_thr"]+"'\n");
+        var cond_age_upper   = (filters["age_upper_opt"]=="All"?"":"AND U.`Age` <= '"+filters["age_upper_thr"]+"'\n");
 
-        return cond_orientation + cond_diagonal + cond_gender + cond_grip;
+        return cond_orientation + cond_diagonal + cond_gender + cond_grip + cond_age_lower + cond_age_upper;
     }
 
     function compute_axiom_time(axiom, data, inds, filters, cur_crunch) {
@@ -809,5 +811,4 @@ io.sockets.on('connection', function (socket) {
             });
         });
     }
-
 });
