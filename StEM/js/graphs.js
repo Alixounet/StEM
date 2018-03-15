@@ -460,7 +460,12 @@ gvar.colors = ["#b5a633", "#b59210", "#4ea1a6", "#19698c", "#0f3c77"];
 gvar.colors = ["#f15854", "#faa43a", "#60bd68", "#5da5da", "#b276b2"]
 
 function update_data(data) {
-    if (data == null) { return; }
+    if (data == null) {
+        $(".placeholder").show();
+        return;
+    } else {
+        $(".placeholder").hide();
+    }
     gvar.last_data = data;
     //Object {
     //     type: "screen",

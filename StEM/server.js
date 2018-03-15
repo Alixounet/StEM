@@ -52,8 +52,6 @@ function datelog(string) {
 }
 
 function handler (req, res) {
-    // console.log(__dirname);
-    // console.log(req.url);
     var url = req.url;
     if (url == '/') { url = '/index.html'; }
     fs.readFile(__dirname + url,
@@ -122,7 +120,6 @@ io.sockets.on('connection', function (socket) {
     function set_time_results(type, inds, time, cur_crunch, u_id) {
         if (cur_crunch == current_crunch) {
             var ptr = results[type];
-            // console.log(ptr);
             for (var k = 0; k < inds.length -1; k++) {
                 ptr = ptr[inds[k]];
             }
@@ -155,16 +152,21 @@ io.sockets.on('connection', function (socket) {
         // console.log(data);
         prepare_res(data, "workspace");
 
+        nb_scenario = 0;
+        nb_screen = 0;
+        nb_axiom = 0;
         for (var k_ws = 0; k_ws < data["seq"].length; k_ws++) {
             results["expert"].push([]);
             results["normal"].push([]);
             results["novice"].push([]);
             results["users"].push([]);
+            nb_scenario += 1;
             for (var k_sc = 0; k_sc < data["seq"][k_ws].length; k_sc++) {
                 results["expert"][k_ws].push([]);
                 results["normal"][k_ws].push([]);
                 results["novice"][k_ws].push([]);
                 results["users"][k_ws].push([]);
+                nb_screen += 1;
                 for (var k_scr = 0; k_scr < data["seq"][k_ws][k_sc].length; k_scr++) {
                     results["expert"][k_ws][k_sc].push([]);
                     results["normal"][k_ws][k_sc].push([]);
@@ -175,6 +177,7 @@ io.sockets.on('connection', function (socket) {
                         results["normal"][k_ws][k_sc][k_scr].push(prepare_axiom(data["seq"][k_ws][k_sc][k_scr][k_ax]));
                         results["novice"][k_ws][k_sc][k_scr].push(prepare_axiom(data["seq"][k_ws][k_sc][k_scr][k_ax]));
                         results["users"][k_ws][k_sc][k_scr].push(prepare_axiom(data["seq"][k_ws][k_sc][k_scr][k_ax]));
+                        nb_axiom += 1;
                     }
                 }
             }
@@ -192,6 +195,8 @@ io.sockets.on('connection', function (socket) {
                 }
             }
         }
+
+        register_new_query(socket.id, "Workspace", nb_scenario, nb_screen, nb_axiom);
     });
 
     // data = {"filters": filters, "seq": [ [ [axiom] ] ]}
@@ -202,11 +207,14 @@ io.sockets.on('connection', function (socket) {
         // console.log(data);
         prepare_res(data, "scenario");
 
+        nb_screen = 0;
+        nb_axiom = 0;
         for (var k_sc = 0; k_sc < data["seq"].length; k_sc++) {
             results["expert"].push([]);
             results["normal"].push([]);
             results["novice"].push([]);
             results["users"].push([]);
+            nb_screen += 1;
             for (var k_scr = 0; k_scr < data["seq"][k_sc].length; k_scr++) {
                 results["expert"][k_sc].push([]);
                 results["normal"][k_sc].push([]);
@@ -217,6 +225,7 @@ io.sockets.on('connection', function (socket) {
                     results["normal"][k_sc][k_scr].push(prepare_axiom(data["seq"][k_sc][k_scr][k_ax]));
                     results["novice"][k_sc][k_scr].push(prepare_axiom(data["seq"][k_sc][k_scr][k_ax]));
                     results["users"][k_sc][k_scr].push(prepare_axiom(data["seq"][k_sc][k_scr][k_ax]));
+                    nb_axiom += 1;
                 }
             }
         }
@@ -231,6 +240,8 @@ io.sockets.on('connection', function (socket) {
                 }
             }
         }
+
+        register_new_query(socket.id, "Scenario", 1, nb_screen, nb_axiom);
     });
 
     // data = {"filters": filters, "seq": [ [axiom] ]}
@@ -238,8 +249,10 @@ io.sockets.on('connection', function (socket) {
         current_crunch += 1;
         var cur_crunch = current_crunch;
         console.log("Crunching screen");
+        // console.log(data);
         prepare_res(data, "screen");
 
+        nb_axiom = 0;
         for (var k_scr = 0; k_scr < data["seq"].length; k_scr++) {
             results["expert"].push([]);
             results["normal"].push([]);
@@ -250,6 +263,7 @@ io.sockets.on('connection', function (socket) {
                 results["normal"][k_scr].push(prepare_axiom(data["seq"][k_scr][k_ax]));
                 results["novice"][k_scr].push(prepare_axiom(data["seq"][k_scr][k_ax]));
                 results["users"][k_scr].push(prepare_axiom(data["seq"][k_scr][k_ax]));
+                nb_axiom += 1;
             }
         }
 
@@ -261,6 +275,8 @@ io.sockets.on('connection', function (socket) {
                              cur_crunch);
             }
         }
+
+        register_new_query(socket.id, "Screen", 1, 1, nb_axiom);
     });
 
     // data = {"filters": filters, "seq": [axiom]}
@@ -756,6 +772,35 @@ io.sockets.on('connection', function (socket) {
                         }
                     }
                     compute_axiom_time(axiom, data, inds, filters, cur_crunch);
+                } else {
+                    datelog(query);
+                    datelog(err);
+                    return;
+                }
+            });
+        });
+    }
+
+    function register_new_query(socket_id, query_type, nb_scenario, nb_screen, nb_axiom) {
+        var query = "";
+        query += " INSERT INTO `Queries` (`Date`,`Socket`,`QueryType`,           \n";
+        query += "                        `NunmberOfScenario`,`NunmberOfScreen`, \n";
+        query += "                        `NunmberOfAxioms`)                     \n";
+        query += " VALUES (CURRENT_TIMESTAMP(),                                  \n";
+        query += "         '"+socket_id+"',                                      \n";
+        query += "         '"+query_type+"',                                     \n";
+        query += "          "+nb_scenario+",                                     \n";
+        query += "          "+nb_screen+",                                       \n";
+        query += "          "+nb_axiom+");                                       \n";
+        query += ";                                                                ";
+
+        pool.getConnection(function(err,connection) {
+            if (err) { datelog(err); return; }
+
+            connection.query(query,function(err,rows) {
+                connection.release();
+                if(!err) {
+                    return;
                 } else {
                     datelog(query);
                     datelog(err);
