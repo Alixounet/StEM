@@ -951,6 +951,42 @@ a {
     height: calc(75% - 5px - 5px);
 }
 
+#placeholder_stacked_bar {
+    position: absolute;
+    left: 10px;
+    width: calc(100% - 20px - 8px);
+    top: 10px;
+    height: calc(25% - 20px - 8px);
+}
+
+#placeholder_user_stacked_bar {
+    position: absolute;
+    left: 10px;
+    width: calc(50% - 20px - 8px);
+    bottom: 10px;
+    height: calc(75% - 20px - 8px);
+}
+
+#placeholder_distribution {
+    position: absolute;
+    right: 10px;
+    width: calc(50% - 20px - 8px);
+    bottom: 10px;
+    height: calc(75% - 20px - 8px);
+}
+
+.placeholder {
+    border-style: dashed;
+    border-width: 4px;
+    border-color: #787878;
+    border-radius: 2px;
+    background: #AAAAAA;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .axis path, .axis line {
     fill: none;
     stroke: black;
@@ -995,4 +1031,31 @@ text {
     opacity: 0.8;
     color: white;
     text-align: center;
+}
+
+
+
+
+
+.tuto_tooltip {
+}
+
+.tuto_tooltip .tuto_tooltiptext {
+    visibility: hidden;
+    width: 100%;
+    background-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 0%;
+}
+
+.tuto_tooltip:hover .tuto_tooltiptext {
+    visibility: visible;
 }

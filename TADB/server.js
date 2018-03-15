@@ -14,7 +14,6 @@
  *   See https://github.com/Alixounet/StEM/blob/master/LICENSE
  */
 
-var express  =  require("express");
 var mysql    =  require('mysql');
 
 var ConfigParser = require('configparser');

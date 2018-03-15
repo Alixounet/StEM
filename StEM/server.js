@@ -14,7 +14,6 @@
  *   See https://github.com/Alixounet/StEM/blob/master/LICENSE
  */
 
-var express  =  require("express");
 var mysql    =  require('mysql');
 var simstats = require('simple-statistics');
 var fs = require('fs');

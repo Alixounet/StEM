@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
     <script type="text/javascript" src="js/client.js"></script>
 
-    <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
     <script src="http://d3js.org/d3.v3.js"></script>
 </head>
 <body id="main">
@@ -131,7 +130,6 @@
             <input type="text" id="screen_name" value="">
             <button id="up_backgrnd" class="ui-button ui-widget ui-corner-all top_input">Background</button>
             <input type='file' id="hidden_up_backgrnd"/>
-            <!-- Dwell time:&nbsp;<input id="dwell_time" class="spinner">&nbsp;ms -->
             <div id="sequence_name"></div>
         </div>
         <div id="actions_canvas"></div>
@@ -184,7 +182,7 @@
         <div class="guard"></div>
         <div id="scenarios" class="list_container">
             <div id="workspace_but" class="format_life format_button">
-                <button id="workspace_add" class="ui-button ui-widget ui-corner-all button_life">Add</button>
+                <button id="workspace_add" class="ui-button ui-widget ui-corner-all button_life tuto_tooltip">Add</button>
                 <button id="workspace_clone" class="ui-button ui-widget ui-corner-all button_life">Clone</button>
                 <button id="workspace_delete" class="ui-button ui-widget ui-corner-all button_life">Delete</button>
             </div>
@@ -206,16 +204,19 @@
                 <span id="value"></span>
             </div>
         </svg>
+        <div id="placeholder_stacked_bar" class="placeholder">No graph to display yet...</div>
         <svg id="user_stacked_bar">
             <div id="tooltip_user" class="hidden">
                 <span id="value"></span>
             </div>
         </svg>
+        <div id="placeholder_user_stacked_bar" class="placeholder">No graph to display yet...</div>
         <svg id="distribution">
             <div id="tooltip_distrib" class="hidden">
                 <span id="value"></span>
             </div>
         </svg>
+        <div id="placeholder_distribution" class="placeholder">No graph to display yet...</div>
     </div>
 
     <div id="computation">
