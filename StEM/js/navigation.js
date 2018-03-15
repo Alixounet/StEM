@@ -291,6 +291,7 @@ function update_views() {
                 var scr = sc["screen_list"][k2];
                 var strgs = gvar.sequence_to_string(scr["seq"]);
                 var seq = strgs[0];
+                if (seq == 'null') { seq = 'empty'; }
                 var err = strgs[1];
 
                 var inner_html = "";
