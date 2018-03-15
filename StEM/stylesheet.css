@@ -1001,7 +1001,7 @@ text {
 
 #tooltip, #tooltip_user, #tooltip_distrib {
     position: absolute;
-    text-align: center;
+    /*text-align: center;*/
     width: auto;
     height: auto;
     padding: 5px;
@@ -1014,6 +1014,10 @@ text {
     border-radius: 5px;
 
     pointer-events: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #tooltip.hidden, #tooltip_user.hidden, #tooltip_distrib.hidden {
     display: none;
@@ -1030,32 +1034,35 @@ text {
     background-color: black;
     opacity: 0.8;
     color: white;
-    text-align: center;
+    /*text-align: center;*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-
-
-
-.tuto_tooltip {
-}
-
-.tuto_tooltip .tuto_tooltiptext {
-    visibility: hidden;
-    width: 100%;
-    background-color: black;
-    color: #FFFFFF;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    
-    /* Position the tooltip */
+#general_tooltip {
     position: absolute;
-    z-index: 1;
-    bottom: 100%;
+    width: auto;
+    height: auto;
+    
+    top: 0%;
     left: 0%;
+
+    background-color: #FFC107;
+    opacity: 0.9;
+    color: black;
+    padding: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
 }
 
-.tuto_tooltip:hover .tuto_tooltiptext {
-    visibility: visible;
+.has_tooltip {
 }

@@ -221,3 +221,63 @@ function change_from_spinner() {
     document.getElementById("sequence_name").innerHTML = "Seq: "+seq+"<br>"+err;
 }
 gvar.change_from_spinner = change_from_spinner;
+
+
+gvar.tooltip_timer = null;
+gvar.tooltip_elem = null;
+function display_tooltip(elem) {
+    $("#general_tooltip").hide();
+    gvar.tooltip_elem = elem[0];
+
+    if (gvar.tooltip_timer != null) {
+        clearTimeout(gvar.tooltip_timer);
+        gvar.tooltip_timer = null;
+    }
+    gvar.tooltip_timer = setTimeout(gvar.display_tooltip_aux, 1000);
+}
+gvar.display_tooltip = display_tooltip;
+
+function display_tooltip_aux() {
+    gvar.tooltip_timer = null;
+
+    elem = gvar.tooltip_elem;
+    $("#general_tooltip").show();
+    var css = ""
+    if ($("#"+elem.id).offset().left <= window.innerWidth/2) {
+        css += "left:"+$("#"+elem.id).offset().left+"px;"
+        css += "right:auto;"
+    } else {
+        css += "right:"+(window.innerWidth-$("#"+elem.id).offset().left-$("#"+elem.id)[0].offsetWidth)+"px;"
+        css += "left:auto;"
+    }
+    if ($("#"+elem.id).offset().top <= window.innerHeight/2) {
+        css += "top:"+($("#"+elem.id).offset().top+$("#"+elem.id)[0].offsetHeight)+"px;"
+        css += "bottom:auto;"
+    } else {
+        css += "bottom:"+(window.innerHeight-$("#"+elem.id).offset().top)+"px;"
+        css += "top:auto;"
+    }
+    document.getElementById("general_tooltip").setAttribute("style",css)
+    
+    if (elem.id == "workspace_undo" ||
+        elem.id == "scenario_undo" ||
+        elem.id == "screen_undo") {
+        document.getElementById("general_tooltip").innerHTML = "Undo the last action performed";
+    } else if (elem.id == "workspace_redo" ||
+               elem.id == "scenario_redo" ||
+               elem.id == "screen_redo") {
+        document.getElementById("general_tooltip").innerHTML = "Redo the last action performed";
+    } else {
+        document.getElementById("general_tooltip").innerHTML = "Hum... Tooltip not found...";
+    }
+}
+gvar.display_tooltip_aux = display_tooltip_aux;
+
+function remove_tooltip() {
+    $("#general_tooltip").hide();
+    if (gvar.tooltip_timer != null) {
+        clearTimeout(gvar.tooltip_timer);
+        gvar.tooltip_timer = null;
+    }
+}
+gvar.remove_tooltip = remove_tooltip;

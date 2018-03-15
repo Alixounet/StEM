@@ -378,6 +378,17 @@ function update_views() {
             }
             document.getElementById("screens").appendChild(document.getElementById("scenario_but"));
         }
+
+        $(".has_tooltip").off('mouseenter');
+        $(".has_tooltip").off('mouseleave');
+        $(".has_tooltip").off('click', gvar.remove_tooltip);
+        $(".has_tooltip").off('doubleclick', gvar.remove_tooltip);
+        $(".has_tooltip").off('move', gvar.remove_tooltip);
+        $(".has_tooltip").on('mouseenter', function(){ gvar.display_tooltip($(this)); });
+        $(".has_tooltip").on('mouseleave', gvar.remove_tooltip);
+        $(".has_tooltip").on('click', gvar.remove_tooltip);
+        $(".has_tooltip").on('doubleclick', gvar.remove_tooltip);
+        $(".has_tooltip").on('move', gvar.remove_tooltip);
     }
 
     // console.log(to_save["action_list"][k]["div_seq"].lastElementChild.lastElementChild.getAttribute("msval"))

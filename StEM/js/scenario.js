@@ -277,7 +277,7 @@ gvar.open_screen = open_screen;
 
 function create_div_screen() {
     var div = document.createElement('div');
-    div.className = "elem";
+    div.className = "elem has_tooltip";
     div.id = "elem_"+gvar.cur_id;
     gvar.cur_id += 1;
     return div;

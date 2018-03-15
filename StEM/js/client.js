@@ -81,6 +81,7 @@ $(function(){
         });
         ////////////////////////
         $("#general_error").hide();
+        $("#general_tooltip").hide();
 
         window.addEventListener("resize", function() { gvar.resize(); });
 
@@ -92,5 +93,10 @@ $(function(){
         gvar.set_screen();
 
         $(".spinner").spinner().spinner("option", "min", 1);
+        $(".has_tooltip").on('mouseenter', function(){ gvar.display_tooltip($(this)); });
+        $(".has_tooltip").on('mouseleave', gvar.remove_tooltip);
+        $(".has_tooltip").on('click', gvar.remove_tooltip);
+        $(".has_tooltip").on('doubleclick', gvar.remove_tooltip);
+        $(".has_tooltip").on('move', gvar.remove_tooltip);
     });
 })

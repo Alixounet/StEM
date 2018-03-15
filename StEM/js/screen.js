@@ -504,7 +504,7 @@ gvar.handle_mouse_action_canvas = handle_mouse_action_canvas;
 
 function create_div_action_canvas(type) {
     var div = document.createElement('div');
-    div.className = "elem_canvas "+type;
+    div.className = "elem_canvas has_tooltip "+type;
     div.id = "elem_"+gvar.cur_id;
     if (type == "swipe") {
         div.className = "elem_canvas "+type+" swipe_right";

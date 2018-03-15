@@ -236,7 +236,7 @@ gvar.open_scenario = open_scenario;
 
 function create_div_scenario() {
     var div = document.createElement('div');
-    div.className = "elem";
+    div.className = "elem has_tooltip";
     div.id = "elem_"+gvar.cur_id;
     gvar.cur_id += 1;
     return div;
