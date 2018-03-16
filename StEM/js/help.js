@@ -29,7 +29,8 @@ function toogle_help() {
         });
     } else {
         $("#help").animate({
-            "left": ($("#main").width()-$("#help").width())+"px"
+            //"left": ($("#main").width()-$("#help").width())+"px"
+            "left": ($("#help").width()+20)+"px"
         }, {
             duration: 1000,
             specialEasing: {
@@ -46,7 +47,8 @@ function resize_help() {
     if (!gvar.help_on) {
         $("#help").css({"left":"100%"});
     } else {
-        $("#help").css({"left": ($("#main").width()-$("#help").width())+"px"});
+        //$("#help").css({"left": ($("#main").width()-$("#help").width())+"px"});
+        $("#help").css({"left": ($("#help").width()+20)+"px"});
     }
 }
 gvar.resize_help = resize_help;

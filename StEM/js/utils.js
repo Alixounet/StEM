@@ -227,7 +227,7 @@ gvar.tooltip_timer = null;
 gvar.tooltip_elem = null;
 function display_tooltip(elem) {
     $("#general_tooltip").hide();
-    gvar.tooltip_elem = elem[0];
+    gvar.tooltip_elem = elem;
 
     if (gvar.tooltip_timer != null) {
         clearTimeout(gvar.tooltip_timer);
@@ -237,17 +237,96 @@ function display_tooltip(elem) {
 }
 gvar.display_tooltip = display_tooltip;
 
-function display_tooltip_aux() {
-    gvar.tooltip_timer = null;
+gvar.tooltip_dico = {};
 
-    elem = gvar.tooltip_elem;
+gvar.tooltip_dico["help_icon"] = "More about StEM. Click to expand or contract the tab.";
+
+gvar.tooltip_dico["computation_icon"] = "Set up filters to specialize the predictions to screen orientations, hand grips, ... Click to expand or contract the tab.";
+gvar.tooltip_dico["quick_crunch"]     = "Refresh the predictions usign the current filters.";
+gvar.tooltip_dico["agg_label"]        = "Method used while aggregating the data to compute the different models.";
+gvar.tooltip_dico["ori_label"]        = "Filter the data by screen orientation.";
+gvar.tooltip_dico["dia_label"]        = "Filter the data by screen sizes.";
+gvar.tooltip_dico["grip_label"]       = "Filter the data by type of grips (see the '?' tab for more information).";
+gvar.tooltip_dico["gender_label"]     = "Filter the data by gender.";
+gvar.tooltip_dico["age_low_label"]    = "Filter the data by age (sets a lower limit).";
+gvar.tooltip_dico["age_upp_label"]    = "Filter the data by age (sets an upper limit).";
+gvar.tooltip_dico["fast_label"]       = "Threshold limit for the fastest users.";
+gvar.tooltip_dico["slow_label"]       = "Threshold limit for the slowest users.";
+gvar.tooltip_dico["compute"]          = "Refresh the predictions usign the current filters.";
+
+gvar.tooltip_dico["graphs_icon"] = "Results section containing the different graphs. Click to expand or contract the tab.";
+
+gvar.tooltip_dico["workspace_icon"]   = "Go to the workspace menu. Click to expand the tab.";
+gvar.tooltip_dico["workspace_delete"] = "Delete the toggled scenario (highlighted in black).";
+gvar.tooltip_dico["workspace_clone"]  = "Clone the toggled scenario (highlighted in black) and place it in the end.";
+gvar.tooltip_dico["workspace_add"]    = "Add a new scenario and place it in the end.";
+gvar.tooltip_dico["elem_scenarios"]   = "Scenario composing the current workspace. Click to select it (highlighted in black). Double click to modify it.";
+gvar.tooltip_dico["workspace_load"]   = "Load a workspace and replace the current one.";
+gvar.tooltip_dico["workspace_save"]   = "Save the current workspace.";
+gvar.tooltip_dico["workspace_undo"]   = "Undo the last action performed";
+gvar.tooltip_dico["workspace_redo"]   = "Redo the last action performed";
+
+gvar.tooltip_dico["scenario_icon"]   = "Go to the scenario menu. Click to expand the tab.";
+gvar.tooltip_dico["scenario_name"]   = "Specify the name of the current scenario.";
+gvar.tooltip_dico["phone_width"]     = "Specify the phone width in mm. If the width is larger than the height, the device is considered with a landscape orientation.";
+gvar.tooltip_dico["phone_height"]    = "Specify the phone height in mm. If the height is larger than the width, the device is considered with a portrait orientation.";
+gvar.tooltip_dico["elem_screens"]    = "Screen composing the current scenario. Click to select it (highlighted in black). Double click to modify it.";
+gvar.tooltip_dico["scenario_delete"] = "Delete the toggled screen (highlighted in black).";
+gvar.tooltip_dico["scenario_clone"]  = "Clone the toggled screen (highlighted in black) and place it in the end.";
+gvar.tooltip_dico["scenario_add"]    = "Add a new screen and place it in the end.";
+gvar.tooltip_dico["scenario_load"]   = "Load a scenario and replace the current one.";
+gvar.tooltip_dico["scenario_save"]   = "Save the current scenario.";
+gvar.tooltip_dico["scenario_undo"]   = "Undo the last action performed";
+gvar.tooltip_dico["scenario_redo"]   = "Redo the last action performed";
+
+gvar.tooltip_dico["screen_name"]   = "Specify the name of the current screen.";
+gvar.tooltip_dico["up_backgrnd"]   = "Upload an image to replace the current background of the screen.";
+gvar.tooltip_dico["sequence_name"] = "Axioms of the interaction sequence. Error are displayed in red and explained below.";
+gvar.tooltip_dico["screen_load"]   = "Load a screen and replace the current one.";
+gvar.tooltip_dico["screen_save"]   = "Save the current screen.";
+gvar.tooltip_dico["screen_undo"]   = "Undo the last action performed";
+gvar.tooltip_dico["screen_redo"]   = "Redo the last action performed";
+
+gvar.tooltip_dico["interface_phone"] = "Interface representing the actions performed of interaction. Move the elements by dragging them on the phone. Specify the size by dragging the edges.";
+gvar.tooltip_dico["elem_interface"]  = "Move the element by dragging it on the phone. Specify the size by dragging the edges.";
+
+gvar.tooltip_dico["timeline"]      = "Timeline representing the sequence of interaction. Drag and drop cards onto it to construct the interaction sequence. Reorder the elements by dragging them elsewhere onto the timeline. Remove them by dragging them out.";
+gvar.tooltip_dico["elem_timeline"] = "Reorder the elements by dragging them onto the timeline. Remove them by dragging them out.";
+
+gvar.tooltip_dico["timers"]        = "Timer components. Click to expand or contract the tab.";
+gvar.tooltip_dico["dwell"]         = "Timer component long presses on a screen. Drag and drop this card onto the timeline after a button, draggable object or a drop area component.";
+gvar.tooltip_dico["timeout"]       = "Generic timer component representing period with no interaction (web page loading, computation time, ...). Drag and drop this card onto the timeline.";
+gvar.tooltip_dico["gestures"]      = "Gesture components. Click to expand or contract the tab.";
+gvar.tooltip_dico["swipe"]         = "Swipe gesture component. Click on the interface component to change the direction. Drag and drop this card onto the timeline.";
+gvar.tooltip_dico["scaling"]       = "Scale gesture component. Setting the spinner will specify the combined distance travelled by both fingers on the screen. Drag and drop this card onto the timeline.";
+gvar.tooltip_dico["rotation"]      = "Rotation gesture component. Setting the spinner will specify the angle of rotation. Positive numbers represent clockwise rotation, negative counter-clockwise. Drag and drop this card onto the timeline.";
+gvar.tooltip_dico["drop"]          = "Drop area components. Click to expand or contract the tab.";
+gvar.tooltip_dico["drop_square"]   = "Square drop area component. Drag and drop this card onto the timeline after a draggable object component or another drop area component.";
+gvar.tooltip_dico["drop_circle"]   = "Circular drop area component. Drag and drop this card onto the timeline after a draggable object component or another drop area component.";
+gvar.tooltip_dico["token"]         = "Draggable object components. Click to expand or contract the tab.";
+gvar.tooltip_dico["token_square"]  = "Square draggable object component. Drag and drop this card onto the timeline before a drop area component.";
+gvar.tooltip_dico["token_circle"]  = "Circular draggable object component. Drag and drop this card onto the timeline before a drop area component.";
+gvar.tooltip_dico["button"]        = "Button components. Click to expand or contract the tab.";
+gvar.tooltip_dico["button_square"] = "Square button component. Drag and drop this card onto the timeline.";
+gvar.tooltip_dico["button_circle"] = "Circular button component. Drag and drop this card onto the timeline.";
+gvar.tooltip_dico["multiplier"]    = "Additional presses onto the previous button. Setting the spinner to 4 would simulate a button pressed 5 times. Drag and drop this card onto the timeline after a button component.";
+
+function display_tooltip_aux() {
+    if (gvar.tooltip_elem == null) { return; }
+    gvar.tooltip_timer = null;
+    elem = gvar.tooltip_elem[0];
+
     $("#general_tooltip").show();
     var css = ""
     if ($("#"+elem.id).offset().left <= window.innerWidth/2) {
         css += "left:"+$("#"+elem.id).offset().left+"px;"
         css += "right:auto;"
     } else {
-        css += "right:"+(window.innerWidth-$("#"+elem.id).offset().left-$("#"+elem.id)[0].offsetWidth)+"px;"
+        right = window.innerWidth-$("#"+elem.id).offset().left-$("#"+elem.id)[0].offsetWidth;
+        if (right < 0) {
+            right = 0;
+        }
+        css += "right:"+right+"px;"
         css += "left:auto;"
     }
     if ($("#"+elem.id).offset().top <= window.innerHeight/2) {
@@ -259,16 +338,16 @@ function display_tooltip_aux() {
     }
     document.getElementById("general_tooltip").setAttribute("style",css)
     
-    if (elem.id == "workspace_undo" ||
-        elem.id == "scenario_undo" ||
-        elem.id == "screen_undo") {
-        document.getElementById("general_tooltip").innerHTML = "Undo the last action performed";
-    } else if (elem.id == "workspace_redo" ||
-               elem.id == "scenario_redo" ||
-               elem.id == "screen_redo") {
-        document.getElementById("general_tooltip").innerHTML = "Redo the last action performed";
+    if (elem.id in gvar.tooltip_dico) {
+        document.getElementById("general_tooltip").innerHTML = gvar.tooltip_dico[elem.id];
     } else {
-        document.getElementById("general_tooltip").innerHTML = "Hum... Tooltip not found...";
+        if (elem.id.split("_")[0] == "elem") {
+            parent = gvar.tooltip_elem.parent()[0].id;
+            document.getElementById("general_tooltip").innerHTML = gvar.tooltip_dico["elem_"+parent];
+        } else {
+            console.log(elem.id);
+            document.getElementById("general_tooltip").innerHTML = "Hum... Tooltip not found...";
+        }
     }
 }
 gvar.display_tooltip_aux = display_tooltip_aux;
@@ -279,5 +358,6 @@ function remove_tooltip() {
         clearTimeout(gvar.tooltip_timer);
         gvar.tooltip_timer = null;
     }
+    gvar.tooltip_elem = null;
 }
 gvar.remove_tooltip = remove_tooltip;

@@ -93,7 +93,7 @@ function resize_scenario() {
         var h = $("#phone_height").spinner("value");
         // if (gvar.isPortrait(w,h)) {
         if (gvar.isTallerThanWide(w,h,false)) {
-            $("#phone").css({"height": "calc(100% - 200px)"});
+            $("#phone").css({"height": "calc(100% - 300px)"});
             $("#phone").css({"width": (($("#phone").height()-15-30)*w/h)+"px"});
         } else {
             $("#phone").css({"width": "calc(30% - 185px)"});

@@ -44,7 +44,7 @@
                 <div class="circle_square"></div>
                 <div class="card_name">
                     Additional press<br>
-                    <div id="div_multiplier" class="div_spinner has_tooltip" multval="1">
+                    <div id="div_multiplier" class="div_spinner" multval="1">
                         <input class="spinner multiplier_spinner">
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                 <div class="clock_inner"></div>
                 <div class="clock_arrow"></div>
                 <div class="card_name">Rotation in deg
-                    <div id="div_angle" class="div_spinner has_tooltip" degval="90">
+                    <div id="div_angle" class="div_spinner" degval="90">
                         <input class="spinner angle_spinner">
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                 <div class="clock_outer"></div>
                 <div class="clock_inner"></div>
                 <div class="card_name">Scaling in mm;
-                    <div id="div_ratio" class="div_spinner has_tooltip" ratioval="20">
+                    <div id="div_ratio" class="div_spinner" ratioval="20">
                         <input class="spinner ratio_spinner">
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                 <div class="clock_arrow"></div>
                 <div class="card_name">
                     Timeout in ms<br>
-                    <div id="div_timeout" class="div_spinner has_tooltip" msval="1000">
+                    <div id="div_timeout" class="div_spinner" msval="1000">
                         <input class="spinner timeout_spinner">
                     </div>
                 </div>
@@ -124,13 +124,14 @@
             <div class="phone_bottom"></div>
             <div class="phone_button"></div>
         </div>
+        <div class="StEM">StEM</div>
         <div class="title">Screen</div>
         <div class="format_input">
             <label for="screen_name">Screen name:</label>
             <input type="text" id="screen_name" value="" class="has_tooltip">
             <button id="up_backgrnd" class="ui-button ui-widget ui-corner-all top_input has_tooltip">Background</button>
             <input type='file' id="hidden_up_backgrnd"/>
-            <div id="sequence_name"></div>
+            <div id="sequence_name" class="has_tooltip"></div>
         </div>
         <div id="actions_canvas"></div>
         <div id="actions_seq"></div>
@@ -144,7 +145,7 @@
     </div>
 
     <div id="scenario">
-        <img id="scenario_icon" src="img/scenario.png">
+        <img id="scenario_icon" src="img/scenario.png" class="has_tooltip">
         <div class="guard"></div>
         <div id="screens" class="list_container">
             <div id="scenario_but" class="format_life format_button">
@@ -153,6 +154,7 @@
                 <button id="scenario_delete" class="ui-button ui-widget ui-corner-all button_life has_tooltip">Delete</button>
             </div>
         </div>
+        <div class="StEM">StEM</div>
         <div class="title">Scenario</div>
         <div class="format_input">
             <label for="scenario_name">Scenario name:</label>
@@ -178,7 +180,7 @@
     </div>
 
     <div id="workspace">
-        <img id="workspace_icon" src="img/work.png">
+        <img id="workspace_icon" src="img/work.png" class="has_tooltip">
         <div class="guard"></div>
         <div id="scenarios" class="list_container">
             <div id="workspace_but" class="format_life format_button">
@@ -187,6 +189,7 @@
                 <button id="workspace_delete" class="ui-button ui-widget ui-corner-all button_life has_tooltip">Delete</button>
             </div>
         </div>
+        <div class="StEM">StEM</div>
         <div class="title">Workspace</div>
         <div class="format_input format_button">
             <button id="workspace_undo" class="ui-button ui-widget ui-corner-all button_hist has_tooltip">Undo</button>
@@ -233,7 +236,7 @@
             <input type="radio" name="orientation_type" id="radio_orientation_All" checked="checked">All</input>
             <input type="radio" name="orientation_type" id="radio_orientation_Current">Current</input>
         </div>
-        <div class="label has_tooltip" id="dia_label">Diagonal:</div>
+        <div class="label has_tooltip" id="dia_label">Screen size:</div>
         <div class="options">
             <input type="radio" name="diagonal_type" id="radio_diagonal_All" checked="checked">All</input>
             <input type="radio" name="diagonal_type" id="radio_diagonal_Current">Current</input>
