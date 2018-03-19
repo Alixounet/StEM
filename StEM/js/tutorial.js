@@ -189,7 +189,7 @@ function tuto_next_step() {
         gvar.set_pannels($("#main").width() - $("#computation").width() - 30, 0, 0, 0);
         $("#tuto_explanations").css({"left": "5%", "top": "200px"});
         document.getElementById("tuto_text").innerHTML  = "<h1>Step 10: prediction times</h1>";
-        document.getElementById("tuto_text").innerHTML += "These options are quite simple. They allow to filter the Touch Action Data base  ";
+        document.getElementById("tuto_text").innerHTML += "These options are quite simple. They allow to filter the Touch Action Data Base  ";
         document.getElementById("tuto_text").innerHTML += "in order to specialize the time prediction models to a specific device or population. ";
         document.getElementById("tuto_text").innerHTML += "Once you've selected your filters, simply click the 'Compute completion times' button. ";
         document.getElementById("tuto_text").innerHTML += "The results will be displayed in the graph panel. ";
@@ -199,9 +199,9 @@ function tuto_next_step() {
         gvar.set_pannels(0, $("#main").height()*0.80 - 30, 0, 0);
         $("#tuto_explanations").css({"left": "calc(30% + 25px)", "top": "5%"});
         document.getElementById("tuto_text").innerHTML  = "<h1>Step 11: reading the graphs</h1>";
-        document.getElementById("tuto_text").innerHTML += "We can now harvest the fruit of our labour! First thing to notice, we only one scenario ";
-        document.getElementById("tuto_text").innerHTML += "in the current workspace so only one colour. The middle bar corresponds to the prediction time in ms ";
-        document.getElementById("tuto_text").innerHTML += "computed with all the data (after we applied the filters your specified). The top bar is ";
+        document.getElementById("tuto_text").innerHTML += "We can now harvest the fruit of our labour! First thing to notice, we only have one scenario ";
+        document.getElementById("tuto_text").innerHTML += "in the current workspace so only one colour. The middle bar corresponds to the prediction time in milliseconds ";
+        document.getElementById("tuto_text").innerHTML += "computed with all the data (after we applied the filters your specified). The top bar ";
         document.getElementById("tuto_text").innerHTML += "is the prediction time using only the fastest users. The bottom one using only the slowest users. ";
         document.getElementById("tuto_text").innerHTML += "If you move the cursor on the bars you'll get the precise prediction. If you click on the panel ";
         document.getElementById("tuto_text").innerHTML += "we will have more details.";
@@ -213,7 +213,7 @@ function tuto_next_step() {
         document.getElementById("tuto_text").innerHTML  = "<h1>Step 11: reading the graphs</h1>";
         document.getElementById("tuto_text").innerHTML += "The bottom left graph corresponds to the prediction time for all individual users. ";
         document.getElementById("tuto_text").innerHTML += "The bottom right graph is the distribution of those individual users. ";
-        document.getElementById("tuto_text").innerHTML += "One last thing, if you compute de prediction times in the 'scenario' or 'screen' panel, you will ";
+        document.getElementById("tuto_text").innerHTML += "One last thing, if you compute de prediction times in the 'scenario' or 'screen' panel, ";
         document.getElementById("tuto_text").innerHTML += "time predictions will be broken down to the screen or axiom level.";
 
         gvar.current_tuto_step = "End";

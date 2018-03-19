@@ -103,8 +103,8 @@ $(function(){
 
         $("#load_examples").selectmenu({
             change: function(event, ui) {
-                $("#load_examples")[0].selectedIndex = 0;
-                $("#load_examples").selectmenu("refresh");
+                // $("#load_examples")[0].selectedIndex = 0;
+                // $("#load_examples").selectmenu("refresh");
 
                 if (ui.item.label == "Checking Updates on Android") {
                     gvar.httpGet_workspace('scenario/simple_paper.sws');
