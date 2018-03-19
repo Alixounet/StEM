@@ -117,7 +117,7 @@
                 </div>
             </div>
         </div>
-        <div id="timeline" class="list_container has_tooltip"></div>
+        <div id="timeline" class="list_container has_tooltip"><div class="title">Timeline</div></div>
         <div id="interface_phone" class="has_tooltip">
             <div class="phone_top"></div>
             <div id="interface" class="phone_screen"></div>
@@ -191,6 +191,16 @@
         </div>
         <div class="StEM">StEM</div>
         <div class="title">Workspace</div>
+        <div id="workspace_examples">
+            <br>
+            <label for="load_examples">Select a workspace example</label><br>
+            <select name="load_examples" id="load_examples">
+                  <option disabled selected></option>
+                  <option>Checking Updates on Android</option>
+                  <option>Design comparison</option>
+                  <option>Misc.</option>
+            </select>
+        </div>
         <div class="format_input format_button">
             <button id="workspace_undo" class="ui-button ui-widget ui-corner-all button_hist has_tooltip">Undo</button>
             <button id="workspace_redo" class="ui-button ui-widget ui-corner-all button_hist has_tooltip">Redo</button>
@@ -224,8 +234,8 @@
 
     <div id="computation">
         <img id="computation_icon" src="img/computation.png" class="has_tooltip">
-        <div id="quick_crunch" class="has_tooltip">quick <img class="crunch_icon" src="img/crunch.png"> crunch</div>
-        <div class="title" id="comp_label"> Computation options</div><br>
+        <div id="quick_crunch" class="has_tooltip"><img class="crunch_icon" src="img/crunch.png"> Compute completion times</div>
+        <div class="title" id="comp_label"> Computation filters</div><br>
         <div class="label has_tooltip" id="agg_label">Aggregation method:</div>
         <div class="options">
             <input type="radio" name="agg_type" id="radio_agg_Median" checked="checked">Median</input>
@@ -282,7 +292,7 @@
         </div>
         <div id="warning"></div>
         <button id="compute" class="ui-button ui-widget ui-corner-all has_tooltip">
-            Crunch <img class="crunch_icon" src="img/crunch.png"> numbers!
+            <img class="crunch_icon" src="img/crunch.png"> Compute completion times
         </button>
     </div>
 
@@ -347,5 +357,37 @@
 
     <div id="general_error"></div>
     <div id="general_tooltip">test</div>
+    <div id="tutorial">
+        <div id="explanations">
+            <h1>Storyboard-Based Empirical Modeling of Touch Interface Performance</h1>
+            Welcome and thank you for using StEM.<br>
+            Authors:
+            <a href="http://www.alixgoguey.fr/">Alix Goguey</a>,
+            <a href="http://cristal.univ-lille.fr/~casiez/">G&eacute;ry Casiez</a>,
+            <a href="http://www.cosc.canterbury.ac.nz/andrew.cockburn/">Andy Cockburn</a> &amp;
+            <a href="http://www.cs.usask.ca/faculty/gutwin/">Carl Gutwin</a>.
+            <br>
+            <br>
+            More info at <a href="http://ns.inria.fr/mjolnir/StEM">ns.inria.fr/mjolnir/StEM</a>.
+            <br>
+            <br>
+            StEM is performance prediction tool for touch interfaces. It was developped to combine the benefits of rapid visual design tools with performance predictive models and help designers quickly prototyping and comparing touch interfaces at early stages. StEM provides performance models for mainstream touch actions, based on a large corpus of realistic data. StEM can also be used as a teaching tool to help conveying insights on layout and interaction designs.
+        </div>
+
+        <div id="starts">
+            <button id="start_stem" class="ui-button ui-widget ui-corner-all">Start using StEM</button>
+            <button id="start_tuto" class="ui-button ui-widget ui-corner-all">Start tutorial</button>
+        </div>
+    </div>
+    <div id="tutorial_pannel">
+        <div id="pannel_left"></div>
+        <div id="pannel_right"></div>
+        <div id="pannel_top"></div>
+        <div id="pannel_bottom"></div>
+        <div id="tuto_explanations">
+            <p id="tuto_text"></p>
+            <button id="next_step_tuto" class="ui-button ui-widget ui-corner-all">Next step</button>
+        </div>
+    </div>
 </body>
 </html>

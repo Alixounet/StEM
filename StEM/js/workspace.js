@@ -54,6 +54,7 @@ function toogle_workspace() {
                 height: "easeOutBounce"
             }
         });
+        if (gvar.tutorial_on) { gvar.tuto_next_step(); }
     }
 }
 gvar.toogle_workspace = toogle_workspace;
@@ -91,6 +92,8 @@ function set_workspace() {
         gvar.store_current_history();
         gvar.add_scenario();
         gvar.update_views();
+
+        if (gvar.tutorial_on) { gvar.tuto_next_step(); }
     });
     document.getElementById("workspace_clone").addEventListener("click", function(evt) {
         gvar.clean_views();
@@ -167,6 +170,7 @@ function set_workspace() {
         // xmlHttp.send(null);
         // return xmlHttp.responseText;
     }
+    gvar.httpGet_workspace = httpGet;
     function readData(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
@@ -229,6 +233,8 @@ function open_scenario(evt,ind) {
     gvar.enable_workspace(false,true);
     gvar.set_cur_scenario(gvar.ws_hist[gvar.cur_ws_hist]["selected"]);
     gvar.update_views();
+
+    if (gvar.tutorial_on) { gvar.tuto_next_step(); }
 }
 gvar.open_scenario = open_scenario;
 //////////////////////

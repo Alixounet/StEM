@@ -39,6 +39,7 @@ function toogle_computation() {
             }
         });
         $("#quick_crunch").fadeOut();
+        if (gvar.tutorial_on) { gvar.tuto_next_step(); }
     }
     gvar.computation_on = !gvar.computation_on;
 }
@@ -185,5 +186,7 @@ function crunch_numbers() {
     if (gvar.computation_on) {
         gvar.toogle_computation();
     }
+
+    if (gvar.tutorial_on) { gvar.tuto_next_step(); }
 }
 gvar.crunch_numbers = crunch_numbers;

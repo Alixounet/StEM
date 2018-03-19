@@ -27,6 +27,7 @@ function toogle_graphs() {
                 height: "easeOutBounce"
             }
         });
+        if (gvar.tutorial_on) { gvar.tuto_next_step(); }
     } else {
         $("#graphs").animate({
             "top":"20%"
@@ -37,6 +38,7 @@ function toogle_graphs() {
                 height: "easeOutBounce"
             }
         });
+        if (gvar.tutorial_on) { gvar.tuto_next_step(); }
     }
     gvar.graphs_on = !gvar.graphs_on;
 }

@@ -264,8 +264,8 @@ a {
     position: absolute;
     background-color: inherit;
     left: 0px;
-    top: calc(80% - 45px - 110px - 24px);
-    width: calc(110px + 24px);
+    top: calc(80% - 45px - 220px - 24px);
+    width: calc(220px + 24px);
     height: 30px;
     /*border-bottom-left-radius: 20px;*/
     border-bottom-right-radius: 20px;
@@ -1075,4 +1075,74 @@ text {
     margin-left: 40px;
     margin-bottom: : 40px;
     width: calc(30% - 55px);
+}
+
+#tutorial {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+
+    z-index: 100;
+}
+
+#explanations {
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    width: 50%;
+    height: 100%;
+
+    text-align: justify;
+
+    color: white;
+}
+
+#starts {
+    position: absolute;
+    left: 0%;
+    bottom: 50%;
+    width: 100%;
+    height: 100;
+
+    text-align: center;
+}
+
+#pannel_left, #pannel_right, #pannel_top, #pannel_bottom {
+    position: absolute;
+    background-color: black;
+    opacity: 0.8;
+}
+
+#pannel_left {
+    left: 0%;
+    top: 0%;
+    right: 100%;
+    bottom: 0%;
+}
+#pannel_right {
+    left: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+}
+#pannel_top {
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 100%;
+}
+#pannel_bottom {
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 100%;
+}
+
+#tuto_explanations {
+    position: absolute;
+    color: white;
+    text-align: justify;
+    width: 600px;
 }

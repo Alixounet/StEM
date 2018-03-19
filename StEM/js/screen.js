@@ -537,6 +537,8 @@ function add_action(type, div, ind) {
     gvar.update_action_properties(new_act, sc["width"], sc["height"]);
     var scr = sc["screen_list"][gvar.cur_ind_scr];
     scr["action_list"].splice(ind, 0, new_act);
+
+    if (gvar.tutorial_on) { gvar.tuto_next_step(); }
 }
 gvar.add_action = add_action;
 

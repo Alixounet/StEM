@@ -148,6 +148,8 @@ function set_scenario() {
         gvar.store_current_history();
         gvar.add_screen();
         gvar.update_views();
+
+        if (gvar.tutorial_on) { gvar.tuto_next_step(); }
     });
     document.getElementById("scenario_clone").addEventListener("click", function(evt) {
         gvar.clean_views();
@@ -270,6 +272,8 @@ function open_screen(evt,ind) {
     gvar.enable_scenario(false,true);
     gvar.set_cur_screen(gvar.ws_hist[gvar.cur_ws_hist]["scenario_list"][gvar.cur_ind_sc]["selected"]);
     gvar.update_views();
+
+    if (gvar.tutorial_on) { gvar.tuto_next_step(); }
 }
 gvar.open_screen = open_screen;
 //////////////////////

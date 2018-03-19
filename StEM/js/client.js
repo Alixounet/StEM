@@ -64,9 +64,10 @@ $(function(){
     loadjscssfile("js/screen.js", "js");
     loadjscssfile("js/scenario.js", "js");
     loadjscssfile("js/workspace.js", "js");
+    loadjscssfile("js/tutorial.js", "js");
 
     whenAvailable(["io", "set_help", "set_computation", "set_graphs", "update_views", "set_workspace",
-                   "set_scenario", "set_screen", "compute_sequence"], function() {
+                   "set_scenario", "set_screen", "compute_sequence", "set_tutorial"], function() {
         console.log("io and js files loaded");
 
         // Server communication
@@ -91,6 +92,7 @@ $(function(){
         gvar.set_workspace();
         gvar.set_scenario();
         gvar.set_screen();
+        gvar.set_tutorial();
 
         $(".spinner").spinner().spinner("option", "min", 1);
         $(".has_tooltip").on('mouseenter', function(){ gvar.display_tooltip($(this)); });
@@ -98,5 +100,21 @@ $(function(){
         $(".has_tooltip").on('click', gvar.remove_tooltip);
         $(".has_tooltip").on('doubleclick', gvar.remove_tooltip);
         $(".has_tooltip").on('move', gvar.remove_tooltip);
+
+        $("#load_examples").selectmenu({
+            change: function(event, ui) {
+                $("#load_examples")[0].selectedIndex = 0;
+                $("#load_examples").selectmenu("refresh");
+
+                if (ui.item.label == "Checking Updates on Android") {
+                    gvar.httpGet_workspace('scenario/simple_paper.sws');
+                    if (gvar.tutorial_on) { gvar.tuto_next_step(); }
+                } else if (ui.item.label == "Design comparison") {
+                    gvar.httpGet_workspace('scenario/comparison_paper.sws');
+                } else if (ui.item.label == "Misc.") {
+                    gvar.httpGet_workspace('scenario/scenarios_paper.sws');
+                }
+            }
+        });
     });
 })
