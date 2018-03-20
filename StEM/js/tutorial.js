@@ -164,12 +164,6 @@ function tuto_next_step() {
 
         gvar.current_tuto_step = "Step_9";
     } else if (gvar.current_tuto_step == "Step_9") {
-        // TO REMOVE
-        // TO REMOVE
-        $("#next_step_tuto").hide();// TO REMOVE // TO REMOVE
-        // TO REMOVE
-        // TO REMOVE
-
         gvar.set_pannels(0, 0, $("#main").width()*0.80, $("#main").height() - 230);
         $("#tuto_explanations").css({"left": "calc(20% + 10px)", "top": "5%"});
         document.getElementById("tuto_text").innerHTML  = "<h1>Step 9: loading a dummy example</h1>";
