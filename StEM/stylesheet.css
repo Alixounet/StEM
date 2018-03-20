@@ -923,7 +923,7 @@ a {
 
 
 .axis .domain {
-  display: none;
+  /*display: none;*/
 }
 
 #stacked_bar {
@@ -987,6 +987,26 @@ a {
     align-items: center;
 }
 
+.undergraph {
+    border-style: none;
+    border-width: 0px;
+    border-radius: 0px;
+    background: transparent;
+    font-size: 10pt;
+
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#placeholder_stacked_bar.undergraph {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#placeholder_distribution.undergraph {
+    justify-content: flex-end;
+}
+
 .axis path, .axis line {
     fill: none;
     stroke: black;
@@ -1018,6 +1038,8 @@ text {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    z-index: 100;
 }
 #tooltip.hidden, #tooltip_user.hidden, #tooltip_distrib.hidden {
     display: none;

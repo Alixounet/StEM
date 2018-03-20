@@ -463,10 +463,27 @@ gvar.colors = ["#f15854", "#faa43a", "#60bd68", "#5da5da", "#b276b2"]
 
 function update_data(data) {
     if (data == null) {
-        $(".placeholder").show();
+        $(".placeholder").removeClass("undergraph");
+        document.getElementById("placeholder_stacked_bar").innerHTML = "No graph to display yet...";
+        document.getElementById("placeholder_user_stacked_bar").innerHTML = "No graph to display yet...";
+        document.getElementById("placeholder_distribution").innerHTML = "No graph to display yet...";
         return;
     } else {
-        $(".placeholder").hide();
+        $(".placeholder").addClass("undergraph");
+        if (data["type"] == "screen") {
+            document.getElementById("placeholder_stacked_bar").innerHTML = "Axiom prediction times in&nbsp;<i>ms</i>";
+            document.getElementById("placeholder_user_stacked_bar").innerHTML = "Axiom prediction times per user in&nbsp;<i>ms</i>";
+        } else if (data["type"] == "scenario") {
+            document.getElementById("placeholder_stacked_bar").innerHTML = "Screen prediction times in&nbsp;<i>ms</i>";
+            document.getElementById("placeholder_user_stacked_bar").innerHTML = "Screen prediction times per user in&nbsp;<i>ms</i>";
+        } else if (data["type"] == "workspace") {
+            document.getElementById("placeholder_stacked_bar").innerHTML = "Scenario prediction times in&nbsp;<i>ms</i>";
+            document.getElementById("placeholder_user_stacked_bar").innerHTML = "Scenario prediction times per user in&nbsp;<i>ms</i>";
+        }
+        document.getElementById("placeholder_distribution").innerHTML = "User distribution in&nbsp;<i>ms</i>";
+
+        document.getElementById("placeholder_stacked_bar").innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+        document.getElementById("placeholder_distribution").innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
     }
     gvar.last_data = data;
     //Object {
@@ -563,7 +580,7 @@ function plot_stack_chart(dataset) {
                       return (gvar.stacked?xScale(d.x0):0);
                   }).attr('y', function (d, i) {
                       // return yScale(d.y);
-                      var vy = yScale(d.y) + (ind / 3)*(yScale.rangeBand()/nb_series);
+                      var vy = yScale(d.y) + (gvar.nb_scenarios>1?(ind / 3)*(yScale.rangeBand()/(nb_series+1)):0);
                       ind += 1;
                       if (ind >= 3*nb_series) { ind = 0; }
                       return (gvar.stacked?yScale(d.y):vy);
@@ -647,6 +664,9 @@ function plot_stack_user_chart(dataset,filters,distribution) {
          var xScale = (!distribution?d3.scale.ordinal().domain(users).rangeRoundBands([0, width], 0):
                         d3.scale.linear().domain([0, xMax]).range([0,width]));
 
+     var min_vx = 99999;
+     var max_vx = 0;
+     var bar_width = 0;
      var yScale = d3.scale.linear().domain([0, yMax]).range([height,0]),
           xAxis = d3.svg.axis().scale(xScale).orient('bottom'),
           yAxis = d3.svg.axis().scale(yScale).orient('left'),
@@ -659,6 +679,8 @@ function plot_stack_user_chart(dataset,filters,distribution) {
                       return d;
                   }).enter().append('rect').attr('x', function (d,i) {
                       if (!distribution) {
+                          min_vx = Math.min(min_vx, xScale(d.x));
+                          max_vx = Math.max(max_vx, xScale(d.x));
                           var vx = xScale(d.x) + (ind / gvar.nb_users)*(xScale.rangeBand()/nb_series);
                           ind += 1;
                           if (ind >= gvar.nb_users*nb_series) { ind = 0; }
@@ -672,7 +694,8 @@ function plot_stack_user_chart(dataset,filters,distribution) {
                       return height-yScale(d.y);
                   }).attr('width', function (d) {
                       if (!distribution) {
-                          return (gvar.stacked?xScale.rangeBand():xScale.rangeBand() / nb_series);
+                          bar_width = (gvar.stacked?xScale.rangeBand():xScale.rangeBand() / nb_series);
+                          return bar_width;
                       } else {
                           return xScale(d.span);
                       }
@@ -692,31 +715,31 @@ function plot_stack_user_chart(dataset,filters,distribution) {
     svg.append('g').attr('class', 'axis').attr('transform', 'translate(0,' + height + ')').call(xAxis);
     svg.append('g').attr('class', 'axis').call(yAxis);
 
-    if (!distribution && !isNaN(gvar.time_expert)) {
+    if (!distribution && !isNaN(gvar.time_expert) && gvar.stacked) {
     svg.append('rect').attr('fill', "#000000")
-                      .attr('width', 1)
+                      .attr('width', 3)
                       .attr('height', height-yScale(gvar.time_expert))
-                      .attr('x', width*filters["expert"]*0.01)
+                      .attr('x', min_vx-3)//.attr('x', width*filters["expert"]*0.01)
                       .attr('y', yScale(gvar.time_expert))
                       .on('mouseover', function (d) {
                           var xPos = parseFloat(d3.select(this).attr('x')) + xScale.rangeBand() / 2;
                           var yPos = parseFloat(d3.select(this).attr('y')) / 2 + height / 2;
 
-                          d3.select((!distribution?"#tooltip_user":"#tooltip_distrib")).style('left', xPos + 'px').style('top', yPos + 'px').select('#value').text('Experts (fastest '+filters["expert"]+'%)');
+                          d3.select((!distribution?"#tooltip_user":"#tooltip_distrib")).style('left', xPos + 'px').style('top', yPos + 'px').select('#value').text('Experts (fastest '+filters["expert"]+'%): '+Math.round(gvar.time_expert)+'ms');
                           d3.select((!distribution?"#tooltip_user":"#tooltip_distrib")).classed('hidden', false);
                       }).on('mouseout', function () {
                           d3.select((!distribution?"#tooltip_user":"#tooltip_distrib")).classed('hidden', true);
                       });
     svg.append('rect').attr('fill', "#000000")
-                      .attr('width', 1)
+                      .attr('width', 3)
                       .attr('height', height-yScale(gvar.time_novice))
-                      .attr('x', width*(100-filters["novice"])*0.01)
+                      .attr('x', max_vx+bar_width)//.attr('x', width*(100-filters["novice"])*0.01)
                       .attr('y', yScale(gvar.time_novice))
                       .on('mouseover', function (d) {
                           var xPos = parseFloat(d3.select(this).attr('x')) + xScale.rangeBand() / 2;
                           var yPos = parseFloat(d3.select(this).attr('y')) / 2 + height / 2;
 
-                          d3.select((!distribution?"#tooltip_user":"#tooltip_distrib")).style('left', xPos + 'px').style('top', yPos + 'px').select('#value').text('Novices (slowest '+filters["novice"]+'%)');
+                          d3.select((!distribution?"#tooltip_user":"#tooltip_distrib")).style('left', xPos + 'px').style('top', yPos + 'px').select('#value').text('Novices (slowest '+filters["novice"]+'%): '+Math.round(gvar.time_novice)+'ms');
                           d3.select((!distribution?"#tooltip_user":"#tooltip_distrib")).classed('hidden', false);
                       }).on('mouseout', function () {
                           d3.select((!distribution?"#tooltip_user":"#tooltip_distrib")).classed('hidden', true);
