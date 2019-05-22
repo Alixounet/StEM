@@ -78,6 +78,8 @@ $(function(){
             console.log("Server responded and gave the id '"+data+"'.");
         });
         socket.on('crunched', function(data) {
+            // console.log("output event 'crunched'");
+            // console.log(data);
             gvar.update_data(data);
         });
         ////////////////////////

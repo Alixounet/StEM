@@ -158,6 +158,8 @@ function crunch_numbers() {
             return;
         }
         if (seq.length > 0) {
+            // console.log("input event: 'crunch_screen'");
+            // console.log({"filters": filters, "seq": seq});
             gvar.socket.emit('crunch_screen', {"filters": filters, "seq": seq});
         }
     } else if (gvar.scenario_on) {
@@ -169,6 +171,8 @@ function crunch_numbers() {
             return;
         }
         if (seq.length > 0) {
+            // console.log("input event: 'crunch_scenario'");
+            // console.log({"filters": filters, "seq": seq, "names": gvar.get_screens_name(sc)});
             gvar.socket.emit('crunch_scenario', {"filters": filters, "seq": seq, "names": gvar.get_screens_name(sc)});
         }
     } else {
@@ -180,6 +184,8 @@ function crunch_numbers() {
             return;
         }
         if (seq.length > 0) {
+            // console.log("input event: 'crunch_workspace'");
+            // console.log({"filters": filters, "seq": seq, "names": gvar.get_scenarios_name(ws)});
             gvar.socket.emit('crunch_workspace', {"filters": filters, "seq": seq, "names": gvar.get_scenarios_name(ws)});
         }
     }

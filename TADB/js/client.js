@@ -105,12 +105,14 @@ $(function(){
     });
 
     loadjscssfile("js/utils.js", "js");
-    loadjscssfile(window.location.origin + "/socket.io/socket.io.js", "js");
+    // loadjscssfile(window.location.origin + "/socket.io/socket.io.js", "js");
+    loadjscssfile(window.location + "socket.io/socket.io.js", "js");
     whenAvailable(["io"], function() {
         console.log("io loaded");
 
         var origin = window.location.origin;
-        var socket = io.connect(origin);
+        // var socket = io.connect(origin);
+        var socket = io("",{path: "/TADB/socket.io"});
         gvar.socket = socket;
 
         socket.on('connected', function (data) {

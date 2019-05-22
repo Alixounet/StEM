@@ -38,9 +38,8 @@ function add_tap(act,sc,is_gesture) {
     }
     var id = Math.log2(1 + (scr_diag / diameter));
     axiom["ID"] = id;
-    // console.log("TAP: "+id+"("+sc["width"]+" "+sc["height"]+" "+scr_diag+" "+diameter+")");
 
-    axiom["orientation"] = (sc["width"]<=sc["height"]?"Portrait":"Landscape");
+    axiom["orientation"] = (parseFloat(sc["width"])<=parseFloat(sc["height"])?"Portrait":"Landscape");
     axiom["diagonal"] = Math.round(scr_diag/25.4 * 2) / 2;
     return axiom;
 } gvar.add_tap = add_tap;
@@ -69,7 +68,7 @@ function add_pointing(act,last_act,sc,is_gesture) {
     axiom["ID"] = id;
     // console.log("POINTING: "+id+"("+scr_diag+" "+tol+" "+amp+")");
 
-    axiom["orientation"] = (sc["width"]<=sc["height"]?"Portrait":"Landscape");
+    axiom["orientation"] = (parseFloat(sc["width"])<=parseFloat(sc["height"])?"Portrait":"Landscape");
     axiom["diagonal"] = Math.round(scr_diag/25.4 * 2) / 2;
     return axiom;
 } gvar.add_pointing = add_pointing;
@@ -96,7 +95,7 @@ function add_drag(act,last_token_act,last_act,sc) {
     axiom["ID"] = id;
     // console.log("DRAG: "+id+"("+scr_diag+" "+tol+" "+amp+")");
 
-    axiom["orientation"] = (sc["width"]<=sc["height"]?"Portrait":"Landscape");
+    axiom["orientation"] = (parseFloat(sc["width"])<=parseFloat(sc["height"])?"Portrait":"Landscape");
     axiom["diagonal"] = Math.round(scr_diag/25.4 * 2) / 2;
 
     return axiom;
@@ -117,7 +116,7 @@ function add_swipe(act,sc) {
     }
 
     var scr_diag = Math.sqrt(Math.pow(sc["width"],2)+Math.pow(sc["height"],2)); // in mm
-    axiom["orientation"] = (sc["width"]<=sc["height"]?"Portrait":"Landscape");
+    axiom["orientation"] = (parseFloat(sc["width"])<=parseFloat(sc["height"])?"Portrait":"Landscape");
     axiom["diagonal"] = Math.round(scr_diag/25.4 * 2) / 2;
     return axiom;
 } gvar.add_swipe = add_swipe;
@@ -128,7 +127,7 @@ function add_dwell(act,sc) {
     axiom["time"] = act["properties"]["time"];
 
     var scr_diag = Math.sqrt(Math.pow(sc["width"],2)+Math.pow(sc["height"],2)); // in mm
-    axiom["orientation"] = (sc["width"]<=sc["height"]?"Portrait":"Landscape");
+    axiom["orientation"] = (parseFloat(sc["width"])<=parseFloat(sc["height"])?"Portrait":"Landscape");
     axiom["diagonal"] = Math.round(scr_diag/25.4 * 2) / 2;
     return axiom;
 } gvar.add_dwell = add_dwell;
@@ -139,7 +138,7 @@ function add_timeout(act,sc) {
     axiom["time"] = parseInt(act["div_seq"].lastElementChild.lastElementChild.getAttribute("msval"));
 
     var scr_diag = Math.sqrt(Math.pow(sc["width"],2)+Math.pow(sc["height"],2)); // in mm
-    axiom["orientation"] = (sc["width"]<=sc["height"]?"Portrait":"Landscape");
+    axiom["orientation"] = (parseFloat(sc["width"])<=parseFloat(sc["height"])?"Portrait":"Landscape");
     axiom["diagonal"] = Math.round(scr_diag/25.4 * 2) / 2;
     return axiom;
 } gvar.add_timeout = add_timeout;
@@ -157,7 +156,7 @@ function add_rotation(act,sc) {
     axiom["ID"] = id;
 
     var scr_diag = Math.sqrt(Math.pow(sc["width"],2)+Math.pow(sc["height"],2)); // in mm
-    axiom["orientation"] = (sc["width"]<=sc["height"]?"Portrait":"Landscape");
+    axiom["orientation"] = (parseFloat(sc["width"])<=parseFloat(sc["height"])?"Portrait":"Landscape");
     axiom["diagonal"] = Math.round(scr_diag/25.4 * 2) / 2;
     return axiom;
 } gvar.add_rotation = add_rotation;
@@ -182,7 +181,7 @@ function add_scaling(act,sc) {
     if (amp > scr_diag) {
         return gvar.add_wrong("Scaling: the screen is too small to perform this action");
     }
-    axiom["orientation"] = (sc["width"]<=sc["height"]?"Portrait":"Landscape");
+    axiom["orientation"] = (parseFloat(sc["width"])<=parseFloat(sc["height"])?"Portrait":"Landscape");
     axiom["diagonal"] = Math.round(scr_diag/25.4 * 2) / 2;
     return axiom;
 } gvar.add_scaling = add_scaling;

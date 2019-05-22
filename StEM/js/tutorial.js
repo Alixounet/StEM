@@ -16,16 +16,16 @@
 
 function set_pannels(left, top, right, bottom) {
     $("#pannel_left").animate({"left": "0%", "top": "0%", "right": ($("#main").width()-left)+"px", "bottom": bottom+"px"},
-                              {duration: 1000, specialEasing: {width: "linear", height: "easeOutBounce"}}
+                              {duration: 1000, specialEasing: {width: "swing", height: "swing"}}
                               );
     $("#pannel_top").animate({"left": left+"px", "top": "0%", "right": "0%", "bottom": ($("#main").height()-top)+"px"},
-                              {duration: 1000, specialEasing: {width: "linear", height: "easeOutBounce"}}
+                              {duration: 1000, specialEasing: {width: "swing", height: "swing"}}
                               );
     $("#pannel_right").animate({"left": ($("#main").width()-right)+"px", "top": top+"px", "right": "0%", "bottom": "0%"},
-                              {duration: 1000, specialEasing: {width: "linear", height: "easeOutBounce"}}
+                              {duration: 1000, specialEasing: {width: "swing", height: "swing"}}
                               );
     $("#pannel_bottom").animate({"left": "0%", "top": ($("#main").height()-bottom)+"px", "right": right+"px", "bottom": "0%"},
-                              {duration: 1000, specialEasing: {width: "linear", height: "easeOutBounce"}}
+                              {duration: 1000, specialEasing: {width: "swing", height: "swing"}}
                               );
 }
 gvar.set_pannels = set_pannels;
